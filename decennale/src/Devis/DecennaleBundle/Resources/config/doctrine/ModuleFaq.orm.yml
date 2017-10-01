@@ -1,0 +1,40 @@
+Devis\DecennaleBundle\Entity\ModuleFaq:
+    type: entity
+    table: module_faq
+    id:
+        faqId:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: faq_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        faqQuestion:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            comment: ''
+            column: faq_question
+        faqReponse:
+            type: string
+            nullable: false
+            length: 400
+            fixed: false
+            comment: ''
+            column: faq_reponse
+        faqDate:
+            type: date
+            nullable: false
+            comment: ''
+            column: faq_date
+        faqEtat:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: faq_etat
+    lifecycleCallbacks: {  }

@@ -1,0 +1,26 @@
+Devis\DecennaleBundle\Entity\AbsStyleHeader:
+    type: entity
+    table: abs_style_header
+    uniqueConstraints:
+        hed_id:
+            columns:
+                - hed_id
+    id:
+        hedId:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: hed_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        hedStyle:
+            type: text
+            nullable: false
+            length: null
+            fixed: false
+            comment: ''
+            column: hed_style
+    lifecycleCallbacks: {  }

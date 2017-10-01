@@ -1,0 +1,75 @@
+Devis\DecennaleBundle\Entity\AbsMessagerecu:
+    type: entity
+    table: abs_messagerecu
+    id:
+        msgId:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: msg_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        msgCivilite:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            comment: ''
+            column: msg_civilite
+        msgNom:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            comment: ''
+            column: msg_nom
+        msgPrenom:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            comment: ''
+            column: msg_prenom
+        msgEmail:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            comment: ''
+            column: msg_email
+        msgTel:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            comment: ''
+            column: msg_tel
+        msgObjet:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            comment: ''
+            column: msg_objet
+        msgMessage:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            comment: ''
+            column: msg_message
+        msgEtat:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: msg_etat
+        msgDate:
+            type: date
+            nullable: false
+            comment: ''
+            column: msg_date
+    lifecycleCallbacks: {  }

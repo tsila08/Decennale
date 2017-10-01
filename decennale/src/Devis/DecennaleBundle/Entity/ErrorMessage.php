@@ -1,0 +1,39 @@
+<?php
+
+namespace Devis\DecennaleBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * ErrorMessage
+ *
+ * @ORM\Table(name="error_message")
+ * @ORM\Entity
+ */
+class ErrorMessage
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="mg_id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $mgId;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="mg_titre", type="string", length=70, nullable=false)
+     */
+    private $mgTitre;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="mg_text", type="text", nullable=false)
+     */
+    private $mgText;
+
+
+}

@@ -1,0 +1,47 @@
+Devis\DecennaleBundle\Entity\MdlCompteur:
+    type: entity
+    table: mdl_compteur
+    id:
+        compId:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: comp_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        compTitre:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            comment: ''
+            column: comp_titre
+        compIcon:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            comment: ''
+            column: comp_icon
+        compCompteur:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: comp_compteur
+        compOrdre:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: comp_ordre
+        compEtat:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: comp_etat
+    lifecycleCallbacks: {  }

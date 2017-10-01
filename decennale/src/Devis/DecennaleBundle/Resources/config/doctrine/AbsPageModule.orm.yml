@@ -1,0 +1,54 @@
+Devis\DecennaleBundle\Entity\AbsPageModule:
+    type: entity
+    table: abs_page_module
+    id:
+        moduleId:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: module_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        moduleRef:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: module_ref
+        modulePage:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            comment: ''
+            column: module_page
+        moduleTitre:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            comment: ''
+            column: module_titre
+        moduleUrl:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            comment: ''
+            column: module_url
+        moduleOrdre:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: module_ordre
+        moduleEtat:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: module_etat
+    lifecycleCallbacks: {  }

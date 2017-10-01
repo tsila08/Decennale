@@ -1,0 +1,67 @@
+Devis\DecennaleBundle\Entity\AbsFondimage:
+    type: entity
+    table: abs_fondimage
+    uniqueConstraints:
+        fondimg_id:
+            columns:
+                - fondimg_id
+    id:
+        fondimgId:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: fondimg_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        fondimgColor:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            comment: ''
+            column: fondimg_color
+        fondimgImage:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            comment: ''
+            column: fondimg_image
+        fondimgRepeat:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            comment: ''
+            column: fondimg_repeat
+        fondimgAttachment:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            comment: ''
+            column: fondimg_attachment
+        fondimgPosition:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            comment: ''
+            column: fondimg_position
+        fondimgOpacity:
+            type: string
+            nullable: false
+            length: 4
+            fixed: false
+            comment: ''
+            column: fondimg_opacity
+        fondimgEtat:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: fondimg_etat
+    lifecycleCallbacks: {  }

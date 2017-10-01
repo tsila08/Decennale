@@ -1,0 +1,54 @@
+Devis\DecennaleBundle\Entity\AbsRealisation:
+    type: entity
+    table: abs_realisation
+    id:
+        galerieId:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: galerie_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        galerieTitre:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            comment: ''
+            column: galerie_titre
+        galerieDescription:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            comment: ''
+            column: galerie_description
+        galerieImg:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            comment: ''
+            column: galerie_img
+        galerieExtention:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            comment: ''
+            column: galerie_extention
+        galerieEtat:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: galerie_etat
+        galerieDate:
+            type: date
+            nullable: false
+            comment: ''
+            column: galerie_date
+    lifecycleCallbacks: {  }

@@ -1,0 +1,35 @@
+Devis\DecennaleBundle\Entity\ZaNosAttestations:
+    type: entity
+    table: za_nos_attestations
+    id:
+        attId:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: att_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        attTitre:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            comment: ''
+            column: att_titre
+        attPdf:
+            type: string
+            nullable: false
+            length: 150
+            fixed: false
+            comment: ''
+            column: att_pdf
+        attEtat:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: att_etat
+    lifecycleCallbacks: {  }

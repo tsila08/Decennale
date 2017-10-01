@@ -1,0 +1,36 @@
+Devis\DecennaleBundle\Entity\AbsConnexionConfirm:
+    type: entity
+    table: abs_connexion_confirm
+    id:
+        confirmId:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: confirm_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        confirmPseudo:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            comment: ''
+            column: confirm_pseudo
+        confirmRef:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            comment: ''
+            column: confirm_ref
+        confirmChaine:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            comment: ''
+            column: confirm_chaine
+    lifecycleCallbacks: {  }

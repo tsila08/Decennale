@@ -1,0 +1,68 @@
+Devis\DecennaleBundle\Entity\AbsRappeler:
+    type: entity
+    table: abs_rappeler
+    id:
+        rapId:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: rap_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        rapNom:
+            type: string
+            nullable: false
+            length: 80
+            fixed: false
+            comment: ''
+            column: rap_nom
+        rapPrenom:
+            type: string
+            nullable: false
+            length: 80
+            fixed: false
+            comment: ''
+            column: rap_prenom
+        rapEmail:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            comment: ''
+            column: rap_email
+        rapTel:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            comment: ''
+            column: rap_tel
+        rapDateappel:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            comment: ''
+            column: rap_dateappel
+        rapHeure:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            comment: ''
+            column: rap_heure
+        rapEtat:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: rap_etat
+        rapDate:
+            type: date
+            nullable: false
+            comment: ''
+            column: rap_date
+    lifecycleCallbacks: {  }

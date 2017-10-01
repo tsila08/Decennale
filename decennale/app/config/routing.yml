@@ -1,0 +1,7 @@
+devis_decennale:
+    resource: "@DevisDecennaleBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: @AppBundle/Controller/
+    type:     annotation

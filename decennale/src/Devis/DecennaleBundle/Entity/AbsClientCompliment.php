@@ -1,0 +1,109 @@
+<?php
+
+namespace Devis\DecennaleBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * AbsClientCompliment
+ *
+ * @ORM\Table(name="abs_client_compliment")
+ * @ORM\Entity
+ */
+class AbsClientCompliment
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="clcomp_id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $clcompId;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="clcomp_ref", type="string", length=30, nullable=false)
+     */
+    private $clcompRef;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="clcomp_societe", type="string", length=50, nullable=false)
+     */
+    private $clcompSociete;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="clcomp_numerovois", type="integer", nullable=false)
+     */
+    private $clcompNumerovois;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="clcomp_batiment", type="string", length=50, nullable=false)
+     */
+    private $clcompBatiment;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="clcomp_escalier", type="string", length=50, nullable=false)
+     */
+    private $clcompEscalier;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="clcomp_code1", type="string", length=10, nullable=false)
+     */
+    private $clcompCode1;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="clcomp_code2", type="string", length=10, nullable=false)
+     */
+    private $clcompCode2;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="clcomp_Interphone", type="string", length=20, nullable=false)
+     */
+    private $clcompInterphone;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="clcomp_etage", type="string", length=4, nullable=false)
+     */
+    private $clcompEtage;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="clcomp_porte", type="string", length=20, nullable=false)
+     */
+    private $clcompPorte;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="clcomp_remarque", type="string", length=255, nullable=false)
+     */
+    private $clcompRemarque;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="clcomp_etat", type="integer", nullable=false)
+     */
+    private $clcompEtat;
+
+
+}

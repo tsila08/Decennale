@@ -1,0 +1,49 @@
+Devis\DecennaleBundle\Entity\ModulePartenaire:
+    type: entity
+    table: module_partenaire
+    id:
+        partId:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: part_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        partTitre:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            comment: ''
+            column: part_titre
+        partDescription:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            comment: ''
+            column: part_description
+        partImg:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            comment: ''
+            column: part_img
+        partEtat:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: part_etat
+        partUrl:
+            type: string
+            nullable: false
+            length: 250
+            fixed: false
+            comment: ''
+            column: part_url
+    lifecycleCallbacks: {  }

@@ -1,0 +1,35 @@
+Devis\DecennaleBundle\Entity\Wdget:
+    type: entity
+    table: wdget
+    id:
+        wdId:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: wd_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        wdTitre:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            comment: ''
+            column: wd_titre
+        wdIdpage:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: wd_idpage
+        wdUrl:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            comment: ''
+            column: wd_url
+    lifecycleCallbacks: {  }

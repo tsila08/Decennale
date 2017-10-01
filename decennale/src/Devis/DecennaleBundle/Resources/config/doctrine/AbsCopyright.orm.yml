@@ -1,0 +1,22 @@
+Devis\DecennaleBundle\Entity\AbsCopyright:
+    type: entity
+    table: abs_copyright
+    id:
+        copyrightId:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: copyright_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        copyright:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            comment: ''
+            column: copyright_
+    lifecycleCallbacks: {  }

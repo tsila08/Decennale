@@ -1,0 +1,74 @@
+Devis\DecennaleBundle\Entity\AbsClientSociete:
+    type: entity
+    table: abs_client_societe
+    id:
+        soId:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: so_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        soRef:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            comment: ''
+            column: so_ref
+        soRaisonSocial:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            comment: ''
+            column: so_raison_social
+        soFormjuridique:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            comment: ''
+            column: so_formjuridique
+        soDateDeCreation:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            comment: ''
+            column: so_date_de_creation
+        soSiret:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            comment: ''
+            column: so_siret
+        soNbSalarier:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: so_nb_salarier
+        soChiffreAffaire:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            comment: ''
+            column: so_chiffre_affaire
+        soEtat:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: so_etat
+        soDate:
+            type: date
+            nullable: false
+            comment: ''
+            column: so_date
+    lifecycleCallbacks: {  }

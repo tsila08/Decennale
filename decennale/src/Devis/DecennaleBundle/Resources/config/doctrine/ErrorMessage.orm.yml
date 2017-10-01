@@ -1,0 +1,29 @@
+Devis\DecennaleBundle\Entity\ErrorMessage:
+    type: entity
+    table: error_message
+    id:
+        mgId:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: mg_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        mgTitre:
+            type: string
+            nullable: false
+            length: 70
+            fixed: false
+            comment: ''
+            column: mg_titre
+        mgText:
+            type: text
+            nullable: false
+            length: null
+            fixed: false
+            comment: ''
+            column: mg_text
+    lifecycleCallbacks: {  }

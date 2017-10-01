@@ -1,0 +1,48 @@
+Devis\DecennaleBundle\Entity\MdlNosSlogants:
+    type: entity
+    table: mdl_nos_slogants
+    id:
+        slogId:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: slog_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        slogTitre:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            comment: ''
+            column: slog_titre
+        slogIcon:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            comment: ''
+            column: slog_icon
+        slogTexte:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            comment: ''
+            column: slog_texte
+        slogOrdre:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: slog_ordre
+        slogEtat:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: slog_etat
+    lifecycleCallbacks: {  }

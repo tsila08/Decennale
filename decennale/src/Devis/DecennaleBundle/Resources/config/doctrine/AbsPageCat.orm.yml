@@ -1,0 +1,27 @@
+Devis\DecennaleBundle\Entity\AbsPageCat:
+    type: entity
+    table: abs_page_cat
+    id:
+        catId:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: cat_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        catRefcat:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: cat_refcat
+        catRefart:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: cat_refart
+    lifecycleCallbacks: {  }

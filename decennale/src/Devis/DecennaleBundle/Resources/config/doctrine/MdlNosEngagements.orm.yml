@@ -1,0 +1,48 @@
+Devis\DecennaleBundle\Entity\MdlNosEngagements:
+    type: entity
+    table: mdl_nos_engagements
+    id:
+        engtsId:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: engts_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        engtsTitre:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            comment: ''
+            column: engts_titre
+        engtsIcon:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            comment: ''
+            column: engts_icon
+        engtsTexte:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            comment: ''
+            column: engts_texte
+        engtsOrdre:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: engts_ordre
+        engtsEtat:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: engts_etat
+    lifecycleCallbacks: {  }

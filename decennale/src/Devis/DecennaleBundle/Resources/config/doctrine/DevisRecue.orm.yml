@@ -1,0 +1,40 @@
+Devis\DecennaleBundle\Entity\DevisRecue:
+    type: entity
+    table: devis_recue
+    id:
+        dvrId:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: dvr_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        dvrRefclient:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            comment: ''
+            column: dvr_refclient
+        dvrRefdevis:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            comment: ''
+            column: dvr_refdevis
+        dvrEtat:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: dvr_etat
+        dvrDate:
+            type: date
+            nullable: false
+            comment: ''
+            column: dvr_date
+    lifecycleCallbacks: {  }

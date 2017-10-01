@@ -1,0 +1,42 @@
+Devis\DecennaleBundle\Entity\LienSocieaux:
+    type: entity
+    table: lien_socieaux
+    id:
+        lienId:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: lien_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        lienTitre:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            comment: ''
+            column: lien__titre
+        lienRef:
+            type: string
+            nullable: false
+            length: 150
+            fixed: false
+            comment: ''
+            column: lien_ref
+        lienUrle:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            comment: ''
+            column: lien_urle
+        lienEtat:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: lien_etat
+    lifecycleCallbacks: {  }

@@ -1,0 +1,28 @@
+Devis\DecennaleBundle\Entity\AdminFaIcon:
+    type: entity
+    table: admin_fa_icon
+    id:
+        faId:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: fa_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        faRef:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            comment: ''
+            column: fa_ref
+        faEtat:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: fa_etat
+    lifecycleCallbacks: {  }

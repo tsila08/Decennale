@@ -1,0 +1,78 @@
+Devis\DecennaleBundle\Entity\DevisAntecedentOption:
+    type: entity
+    table: devis_antecedent_option
+    id:
+        antId:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: ant_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        antRefdevs:
+            type: string
+            nullable: false
+            length: 35
+            fixed: false
+            comment: ''
+            column: ant_refdevs
+        antRefclient:
+            type: string
+            nullable: false
+            length: 35
+            fixed: false
+            comment: ''
+            column: ant_refclient
+        antDateEffet:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            comment: ''
+            column: ant_date_effet
+        antEcheancier:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            comment: ''
+            column: ant_echeancier
+        antDejassure:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: ant_dejassure
+        antSoustraitance:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: ant_soustraitance
+        antReprise:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: ant_reprise
+        antRedressement:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: ant_redressement
+        antDaterecue:
+            type: date
+            nullable: false
+            comment: ''
+            column: ant_daterecue
+        antEtat:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: ant_etat
+    lifecycleCallbacks: {  }

@@ -1,0 +1,95 @@
+Devis\DecennaleBundle\Entity\AbsClient:
+    type: entity
+    table: abs_client
+    id:
+        clientId:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: client_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        clientRef:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            comment: ''
+            column: client_ref
+        clientCivilite:
+            type: string
+            nullable: false
+            length: 4
+            fixed: false
+            comment: ''
+            column: client_civilite
+        clientNom:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            comment: ''
+            column: client_nom
+        clientPrenom:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            comment: ''
+            column: client_prenom
+        clientEmail:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            comment: ''
+            column: client_email
+        clientTel:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            comment: ''
+            column: client_tel
+        clientCp:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            comment: ''
+            column: client_cp
+        clientVille:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            comment: ''
+            column: client_ville
+        clientAdresse:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            comment: ''
+            column: client_adresse
+        clientEtat:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: client_etat
+        clientNewsletter:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: client_newsletter
+        clientDate:
+            type: date
+            nullable: false
+            comment: ''
+            column: client_date
+    lifecycleCallbacks: {  }

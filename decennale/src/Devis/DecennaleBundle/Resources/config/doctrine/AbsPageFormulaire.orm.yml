@@ -1,0 +1,55 @@
+Devis\DecennaleBundle\Entity\AbsPageFormulaire:
+    type: entity
+    table: abs_page_formulaire
+    id:
+        pgflrId:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: pgflr_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        pgflrTitre:
+            type: string
+            nullable: false
+            length: 150
+            fixed: false
+            comment: ''
+            column: pgflr_titre
+        pgflrDescription:
+            type: string
+            nullable: false
+            length: 400
+            fixed: false
+            comment: ''
+            column: pgflr_description
+        pgflrSlug:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            comment: ''
+            column: pgflr_slug
+        pgflrRefpage:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: pgflr_refpage
+        pgflrType:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            comment: ''
+            column: pgflr_type
+        pgflrEtat:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: pgflr_etat
+    lifecycleCallbacks: {  }

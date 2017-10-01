@@ -1,0 +1,41 @@
+Devis\DecennaleBundle\Entity\AbsPageSidebar:
+    type: entity
+    table: abs_page_sidebar
+    id:
+        sidebarId:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: sidebar_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        sidebarRef:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: sidebar_ref
+        sidebarTitre:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            comment: ''
+            column: sidebar_titre
+        sidebarDescription:
+            type: text
+            nullable: false
+            length: null
+            fixed: false
+            comment: ''
+            column: sidebar_description
+        sidebarEtat:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: sidebar_etat
+    lifecycleCallbacks: {  }

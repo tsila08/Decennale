@@ -1,0 +1,74 @@
+Devis\DecennaleBundle\Entity\AbsPageSite:
+    type: entity
+    table: abs_page_site
+    id:
+        pageId:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: page_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        pageTitle:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            comment: ''
+            column: page_title
+        pageDescription:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            comment: ''
+            column: page_description
+        pageMotcles:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            comment: ''
+            column: page_motcles
+        pageUrl:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            comment: ''
+            column: page_url
+        pageTexte:
+            type: text
+            nullable: false
+            length: null
+            fixed: false
+            comment: ''
+            column: page_texte
+        pageInfo:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: page_info
+        pageType:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            comment: ''
+            column: page_type
+        pageEtat:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: page_etat
+        pageDate:
+            type: date
+            nullable: false
+            comment: ''
+            column: page_date
+    lifecycleCallbacks: {  }

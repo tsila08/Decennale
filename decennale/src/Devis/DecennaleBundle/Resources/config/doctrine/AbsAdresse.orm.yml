@@ -1,0 +1,85 @@
+Devis\DecennaleBundle\Entity\AbsAdresse:
+    type: entity
+    table: abs_adresse
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        nomprenom:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            comment: ''
+        societe:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            comment: ''
+        email:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            comment: ''
+        tel1:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            comment: ''
+        tel2:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            comment: ''
+        pob:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            comment: ''
+        fax:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            comment: ''
+        cp:
+            type: string
+            nullable: false
+            length: 6
+            fixed: false
+            comment: ''
+        ville:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            comment: ''
+        adresse:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            comment: ''
+        heurOverture:
+            type: string
+            nullable: false
+            length: 500
+            fixed: false
+            comment: ''
+            column: heur_overture
+        date:
+            type: date
+            nullable: false
+            comment: ''
+    lifecycleCallbacks: {  }

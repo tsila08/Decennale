@@ -1,0 +1,48 @@
+Devis\DecennaleBundle\Entity\DevisRisques:
+    type: entity
+    table: devis_risques
+    id:
+        dvRqId:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: dv_rq_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        dvRqRefclient:
+            type: string
+            nullable: false
+            length: 35
+            fixed: false
+            comment: ''
+            column: dv_rq_refclient
+        dvRqRefdevis:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            comment: ''
+            column: dv_rq_refdevis
+        dvRqRefrisque:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: dv_rq_refrisque
+        dvRqTitre:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            comment: ''
+            column: dv_rq_titre
+        dvRqEtat:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: dv_rq_etat
+    lifecycleCallbacks: {  }

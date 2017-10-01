@@ -1,0 +1,60 @@
+Devis\DecennaleBundle\Entity\RealisationProjet:
+    type: entity
+    table: realisation_projet
+    id:
+        proId:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: pro_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        proCat:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: pro_cat
+        proTitre:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            comment: ''
+            column: pro_titre
+        proSlug:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            comment: ''
+            column: pro_slug
+        proDescription:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            comment: ''
+            column: pro_description
+        proEtat:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: pro_etat
+        proDate:
+            type: date
+            nullable: false
+            comment: ''
+            column: pro_date
+        proType:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            comment: ''
+            column: pro_type
+    lifecycleCallbacks: {  }

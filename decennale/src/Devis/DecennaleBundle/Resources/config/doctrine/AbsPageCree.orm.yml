@@ -1,0 +1,40 @@
+Devis\DecennaleBundle\Entity\AbsPageCree:
+    type: entity
+    table: abs_page_cree
+    id:
+        pagecreeId:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: pagecree_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        pagecreeTitre:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            comment: ''
+            column: pagecree_titre
+        pagecreeType:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            comment: ''
+            column: pagecree_type
+        pagecreeEtat:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: pagecree_etat
+        pagecreeDate:
+            type: date
+            nullable: false
+            comment: ''
+            column: pagecree_date
+    lifecycleCallbacks: {  }

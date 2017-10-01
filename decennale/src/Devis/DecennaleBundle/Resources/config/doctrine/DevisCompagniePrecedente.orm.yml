@@ -1,0 +1,87 @@
+Devis\DecennaleBundle\Entity\DevisCompagniePrecedente:
+    type: entity
+    table: devis_compagnie_precedente
+    id:
+        cogprId:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: cogpr_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        cogprRefdevs:
+            type: string
+            nullable: false
+            length: 35
+            fixed: false
+            comment: ''
+            column: cogpr_refdevs
+        cogprNomCompagnie:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            comment: ''
+            column: cogpr_nom_compagnie
+        cogprTypeContrat:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            comment: ''
+            column: cogpr_type_contrat
+        cogprNumeroContrat:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            comment: ''
+            column: cogpr_numero_contrat
+        cogprDateSouscription:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            comment: ''
+            column: cogpr_date_souscription
+        cogprDateResiliation:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            comment: ''
+            column: cogpr_date_resiliation
+        cogprNbSinistres:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: cogpr_nb_sinistres
+        cogprTotSinistres:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: cogpr_tot_sinistres
+        cogprResilieNonPaiement:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: cogpr_resilie_non_paiement
+        cogprResilieFausseDeclaration:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: cogpr_resilie_fausse_declaration
+        cogprResilieSinistre:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: cogpr_resilie_sinistre
+    lifecycleCallbacks: {  }

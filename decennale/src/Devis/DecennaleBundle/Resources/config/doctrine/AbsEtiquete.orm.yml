@@ -1,0 +1,56 @@
+Devis\DecennaleBundle\Entity\AbsEtiquete:
+    type: entity
+    table: abs_etiquete
+    id:
+        etiqId:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: etiq_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        etiqTitle:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            comment: ''
+            column: etiq_title
+        etiqDescription:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            comment: ''
+            column: etiq_description
+        etiqMotcles:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            comment: ''
+            column: etiq_motcles
+        etiqUrl:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            comment: ''
+            column: etiq_url
+        etiqTexte:
+            type: text
+            nullable: false
+            length: null
+            fixed: false
+            comment: ''
+            column: etiq_texte
+        etiqEtat:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: etiq_etat
+    lifecycleCallbacks: {  }

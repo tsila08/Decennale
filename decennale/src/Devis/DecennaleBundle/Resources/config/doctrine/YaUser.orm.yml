@@ -1,0 +1,49 @@
+Devis\DecennaleBundle\Entity\YaUser:
+    type: entity
+    table: ya_user
+    id:
+        usId:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: us_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        usTitre:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            comment: ''
+            column: us_titre
+        usDescription:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            comment: ''
+            column: us_description
+        usSlug:
+            type: string
+            nullable: false
+            length: 75
+            fixed: false
+            comment: ''
+            column: us_slug
+        usUrl:
+            type: string
+            nullable: false
+            length: 75
+            fixed: false
+            comment: ''
+            column: us_url
+        usEtat:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: us_etat
+    lifecycleCallbacks: {  }

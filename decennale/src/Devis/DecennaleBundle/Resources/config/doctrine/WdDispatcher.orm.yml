@@ -1,0 +1,49 @@
+Devis\DecennaleBundle\Entity\WdDispatcher:
+    type: entity
+    table: wd_dispatcher
+    id:
+        disId:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: dis_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        disType:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            comment: ''
+            column: dis_type
+        disTitre:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            comment: ''
+            column: dis_titre
+        disDiscription:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            comment: ''
+            column: dis_discription
+        disUrl:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            comment: ''
+            column: dis_url
+        disEtat:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: dis_etat
+    lifecycleCallbacks: {  }

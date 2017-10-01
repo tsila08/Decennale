@@ -1,0 +1,41 @@
+Devis\DecennaleBundle\Entity\ZaAssuraceOption:
+    type: entity
+    table: za_assurace_option
+    id:
+        assoptId:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: assopt_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        assoptRef:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: assopt_ref
+        assoptTitre:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            comment: ''
+            column: assopt_titre
+        assoptDescription:
+            type: text
+            nullable: false
+            length: null
+            fixed: false
+            comment: ''
+            column: assopt_description
+        assoptEtat:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: assopt_etat
+    lifecycleCallbacks: {  }

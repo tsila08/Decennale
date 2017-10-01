@@ -1,0 +1,35 @@
+Devis\DecennaleBundle\Entity\ZaNosConditionsGenerales:
+    type: entity
+    table: za_nos_conditions_generales
+    id:
+        cogId:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: cog_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        cogTitre:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            comment: ''
+            column: cog_titre
+        cogPdf:
+            type: string
+            nullable: false
+            length: 150
+            fixed: false
+            comment: ''
+            column: cog_pdf
+        cogEtat:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: cog_etat
+    lifecycleCallbacks: {  }

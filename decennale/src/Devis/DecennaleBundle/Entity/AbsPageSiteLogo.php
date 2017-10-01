@@ -1,0 +1,46 @@
+<?php
+
+namespace Devis\DecennaleBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * AbsPageSiteLogo
+ *
+ * @ORM\Table(name="abs_page_site_logo")
+ * @ORM\Entity
+ */
+class AbsPageSiteLogo
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="pagelogo_id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $pagelogoId;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="pagelogo_ref", type="integer", nullable=false)
+     */
+    private $pagelogoRef;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="pagelogo_img", type="string", length=100, nullable=false)
+     */
+    private $pagelogoImg;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="pagelogo_etat", type="integer", nullable=false)
+     */
+    private $pagelogoEtat;
+
+
+}

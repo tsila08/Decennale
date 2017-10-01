@@ -1,0 +1,28 @@
+Devis\DecennaleBundle\Entity\VoitureMarque:
+    type: entity
+    table: voiture_marque
+    id:
+        idMarque:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: id_marque
+            generator:
+                strategy: IDENTITY
+    fields:
+        titreMarque:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            comment: ''
+            column: titre_marque
+        etatMarque:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: etat_marque
+    lifecycleCallbacks: {  }
