@@ -1,0 +1,18 @@
+abi_routine_homepage:
+    path:     /
+    defaults: { _controller: AbiRoutineBundle:Routine:index }
+abi_routine_contact:
+    path:     /contacter_nous
+    defaults: { _controller: AbiRoutineBundle:Routine:contact }
+devis_decennale_afficherComs:
+    path:     /avis/index/{pageD}/{pagef}/{valide}
+    defaults: { _controller: AbiRoutineBundle:Commentaires:index }
+devis_decennale_createComs:
+    path:     /avis/create
+    defaults: {_controller: AbiRoutineBundle:Commentaires:create }
+abi_routine_qui_sommes_nous:
+    path:     /qui_sommes_nous
+    defaults: { _controller: AbiRoutineBundle:Routine:quiSommesNous }
+abi_routine_contact:
+    path:     /contacter_nous
+    defaults: { _controller: AbiRoutineBundle:Routine:contact }

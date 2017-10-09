@@ -1,0 +1,9 @@
+admin_decennale_homepage:
+    path:     /
+    defaults: { _controller: AdminDecennaleBundle:Default:index }
+admin_decennale_coms:
+    path:     /Commentaires/{pageD}/{pagef}
+    defaults: { _controller: AdminDecennaleBundle:Commentaires:index }
+admin_decennale_valide:
+    path:     /ValideCommentaires/{id}/{valide}
+    defaults: { _controller: AdminDecennaleBundle:Commentaires:valide}

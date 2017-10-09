@@ -1,7 +1,15 @@
-devis_decennale:
-    resource: "@DevisDecennaleBundle/Resources/config/routing.yml"
-    prefix:   /
+admin_decennale:
+    resource: "@AdminDecennaleBundle/Resources/config/routing.yml"
+    prefix:   /admin
 
-app:
-    resource: @AppBundle/Controller/
-    type:     annotation
+abi_utilisateur:
+    resource: "@AbiUtilisateurBundle/Resources/config/routing.yml"
+    prefix:   /utilisateur
+
+infojet_devis:
+    resource: "@InfojetDevisBundle/Resources/config/routing.yml"
+    prefix:   /devis
+
+abi_routine:
+    resource: "@AbiRoutineBundle/Resources/config/routing.yml"
+    prefix:   /

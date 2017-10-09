@@ -1,3 +1,0 @@
-devis_decennale_homepage:
-    path:     /index
-    defaults: { _controller: DevisDecennaleBundle:Default:index }

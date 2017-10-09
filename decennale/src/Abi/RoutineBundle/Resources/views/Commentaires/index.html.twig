@@ -1,0 +1,168 @@
+{% extends '::layout.html.twig' %} 
+{% block body%}
+
+
+
+<table>
+
+</tr>
+
+
+{% if valide==1 %}
+
+<div class="alert alert-success">
+Votre commentaire a été pris en compte
+</div>
+
+ {% endif %}
+
+<section class="post-section blog-post">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-8">
+        <div class="post-box">
+          <div class="text-box">
+            <div class="clearfix"> <strong class="date"><i class="fa fa-calendar"></i>
+              3 juin 2017 </strong> </div>
+            <h4><a href="commentaires">
+              Commentaires              </a></h4>
+            <p>D&eacute;couvrez les avis des clients&nbsp; devis-decennale&nbsp; assurance&nbsp; pas ch&egrave;re.</p>
+
+<p>✓ + 3 000 assur&eacute;s</p>
+
+<p>✓ Tarifs Attractifs</p>
+
+<p>✓ 100% clients satisfaits !</p>
+          </div>
+        </div>
+                  <div id="content-area">
+            <ul id="myList">
+
+{% for i in pageF..pageD%}
+
+{% if  i<coms|length %}
+
+                           
+                <div class="box">
+
+         {% if coms[i].commentNote==5 %}
+                  <div class="pull-right" > <img src={{asset('assets/images/5etoile.png')}} style="width:100px;" > </div>
+        {% endif %}
+         {% if coms[i].commentNote==4 %}
+                  <div class="pull-right" > <img src={{asset('assets/images/4etoile.png')}} style="width:75px;" > </div>
+        {% endif %}
+          {% if coms[i].commentNote==3 %}
+                  <div class="pull-right" > <img src={{asset('assets/images/3etoile.png')}} style="width:55px;" > </div>
+        {% endif %}
+          {% if coms[i].commentNote==2 %}
+                  <div class="pull-right" > <img src={{asset('assets/images/2etoile.png')}} style="width:35px;" > </div>
+        {% endif %}
+          {% if coms[i].commentNote==1 %}
+                  <div class="pull-right" > <img src={{asset('assets/images/1etoile.png')}} style="width:25px;" > </div>
+        {% endif %}
+	{% if coms[i].commentCivilite=="Mr" %}
+		<div class="thumb"> <img src={{asset('assets/images/Mr.jpg')}}  > </div>
+	{% else %}
+		<div class="thumb"> <img src={{asset('assets/images/Mme.jpg')}}  > </div>
+	{% endif %}
+                   <span class="  text-center" style="font-size:12px; color:#666"><i class="fa fa-calendar"></i>
+                    {{ coms[i].commentDate|date("d/m/Y") }}                </span>
+                  <h4>{{ coms[i].commentCivilite }} : {{ coms[i].commentPrenom }}</h4>
+                  <div class="text-col">
+{{ coms[i].commentText }} <br>
+                   <br>
+                    <hr>
+                    </div>
+                  <div class="price"> </div>
+                </div>
+            
+
+{% endif %}
+     {% endfor %}                       
+                          </ul>
+          </div>
+          <div class="pagination-box">
+            <nav>
+              <ul class="pager">
+                             {% if  pageD>0 %}
+                                  <li><a href="{{ path('devis_decennale_afficherComs', { 'pageD': pageD-10,'pagef' : pageF-10 ,'valide':0})}}">Précedent</a></li>
+                             
+                             {% endif %}
+
+                             {% if  pageF<coms|length %}
+                                   <li> <a href="{{ path('devis_decennale_afficherComs', { 'pageD': pageD+10,'pagef' : pageF+10 ,'valide':0})}}">Suivant</a></li>
+                            {% endif %}
+                                </ul>
+            </nav>
+          </div>
+                </div>
+      <div class="col-md-4 col-sm-6">
+        <aside>
+          <div class="sidebar">
+            <div class="post-box">
+              <div class="comment-form">
+                                            <form  method="post" {{ form_enctype(form) }}  action={{ path('devis_decennale_createComs') }} >
+                
+                <input type="hidden" name="MM_insert" value="form1">
+                  <div class="col-md-12">
+                    <legend>Ecrivez votre avis </legend>
+                  </div>
+                  <div class="">
+                    <div class="col-md-12">
+                      <label>Civilité *</label>
+                      <div class="form-group">
+                        
+                        
+                       {{ form_widget(form.commentCivilite) }}
+                        </div>
+                    </div>
+                    <div class=" col-md-12 ">
+                      <label>Nom <em class="required">*</em></label>
+                 <br> {{ form_widget(form.commentNom) }}
+                    </div>
+                    <div class="col-md-12 col-sm-12">
+                      <label>Prénom <em class="required">*</em></label>
+               <br>  {{ form_widget(form.commentPrenom) }}
+                    </div>
+                    <div class="col-md-12 col-sm-12">
+                      <label>Email <em class="required">*</em></label>
+                  <br>      {{ form_widget(form.commentEmail) }}
+                    </div>
+                    <div class="col-md-12 col-sm-12">
+                      <label>Note*</label>
+                <br>      {{ form_widget(form.commentNote) }}
+                    </div>
+                    <div class="form-group col-md-12">
+                      <label>Commentaire <em class="required">*</em></label>
+                 <br>           {{ form_widget(form.commentText) }}
+                    </div>
+                   
+                  </div>
+                  <div class="col-md-12">
+                    <input value="Valider votre opinion" type="submit">
+                  </div>
+                </form>
+                              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+</tr>
+
+
+
+
+
+</table>
+
+
+
+{% endblock%}
+
+

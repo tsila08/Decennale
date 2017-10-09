@@ -1,0 +1,39 @@
+{% extends "::layout.html.twig" %}
+{% block title %}{{parent()}}--qui sommes nous{% endblock %}
+{% block qui_sommes_nous_parent_active %}active{% endblock%}
+{% block body%}
+<div class="main">
+    <div class="container">
+		
+        <h1>Qui sommes nous</h1>
+		<div class="col-md-9">
+			<h2>TERME REALISATION</h2>
+			<h3>Réalisation : </h3>
+			<p>comprend pour toutes les activités du tableau, la mise en oeuvre y compris la préparation des supports, 
+			la transformation, le confortement, la réparation, la maintenance, l'entretien, et le montage-levage.</p>
+			<p>Par la notion de travaux accessoires et/ou complémentaires, il faut entendre la réalisation de 
+			travaux nécessaires et indispensables à l'exécution des travaux relevant de l'activité principale 
+			définie. Ces travaux répertoriés comme accessoires ou complémentaires ne peuvent en aucun cas faire 
+			l'objet d'un marché de travaux à part entière. Si tel est le cas, l'attestation d'assurance doit 
+			reproduire précisément l'activité objet du marché de travaux. A l'inverse, 
+			ces travaux seraient alors réputés non garantis.</p>
+			<h4>PREPARATION AMENAGEMENTS DU SITE</h4>
+			<h6>1. Assurance décennale Démolition </h6>
+			<p>Démolition d’ouvrage par des moyens manuels ou mécaniques (hors explosifs). 
+			Cette activité comprend, pour les raccordements et la protection des existants, 
+			les travaux accessoires ou complémentaires de :Maçonnerie ;Zinguerie, couverture et étanchéité ;VRD</p>
+			<h6>2. Assurance décennale Terrassement </p>
+			<p>Réalisation à ciel ouvert, de creusement et de blindage de fouilles provisoires dans les sols, ainsi que des travaux de rabattement de nappes nécessaires à l'exécution des travaux, de remblai, d'enrochement non lié et de comblement sauf pour les carrières ayant pour objet soit de constituer par eux-mêmes un ouvrage soit de permettre la
+			réalisation d'un ouvrage. Cette activité comprend les sondages et forages.</p>
+			
+		<hr>
+		<p><i class="fa fa-calendar"></i>22 août 2017</p>
+		</div>
+		<div class="col-md-3">
+		<img class="img-responsive" src="{{asset('assets/pages/img/devis-decennale/devis-gratuit.png')}}">
+		<h3>Devis Décennale Constructeur </h3>
+		<p>Votre assurance décennale en 3 Clics ! devis gratuit assurance decennale</p>
+		</div>
+    </div>
+</div>
+{% endblock%}

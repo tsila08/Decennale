@@ -1,0 +1,67 @@
+{% extends "::layout.html.twig" %}
+{% block title %}{{ parent() }}-Modifier votre profil {% endblock %}	
+
+{% block body_avec_pop_up %}
+{% endblock %}
+
+{% block body_sans_pop_up %}
+{{parent()}}
+{% endblock %}
+{% block contenu %}
+		<br>
+		<h2>Modifier votre profil</h2>
+		<div class="registration-grids">
+			<div class="reg-form">
+				<div class="reg">
+					 <p>Veuillez fournir les renseignements suivants pour continuer.</p>
+					 
+					{% if form_errors(form)%}
+					 <div class="alert alert-danger">  {{ form_errors(form) }} </div>
+					 {% endif %}
+					 {% if (message) %}
+						<div class="alert alert-warning">  {{ message }} </div>
+					 {% endif %}
+					 <form  method="post" action="{{path('bds_utilisateur_modifier_profil')}}" {{ form_enctype(form) }}>
+						<ul>
+							<li class="text-info">Type d'activité * : </li>
+							<li>{{ form_widget(form.typeCompteString) }}</li>
+						</ul>
+						<ul>
+							<li class="text-info">Nom * : </li>
+							<li>{{ form_widget(form.username) }}</li>
+						</ul>
+						<ul>
+							<li class="text-info">Entreprise : </li>
+							<li>{{ form_widget(form.nomEntreprise) }}</li>
+						</ul>
+						<ul>
+							<li class="text-info">Télephone * : </li>
+							<li>{{ form_widget(form.telephone) }}</li>
+						</ul>
+						<ul>
+							<li class="text-info">Adresse : </li>
+							<li>{{ form_widget(form.adresse) }}</li>
+						</ul>				 
+						<ul>
+							<li class="text-info">Ville  * : </li>
+							<li>{{ form_widget(form.ville) }}</li>
+						</ul>
+						{{form_rest(form) }}
+						<p class="click">Pour modifier votre mot de passe ou votre adresse mail  <a href="{{path('bds_utilisateur_modifier_info_connexion')}}">cliquer ici.</a></p> 
+						 <input type="submit" value="Modifier votre profil">
+						 
+					 </form> 
+
+				 </div>
+				 
+			</div>
+			<div class="reg-right">
+				 
+				 
+				 
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<br>
+{% endblock %}
+

@@ -1,0 +1,62 @@
+{% extends "::layout.html.twig" %}
+{% block title %}{{parent()}}--{{app.user.username}} {{app.user.userfirstname}}{% endblock %}
+{% block acceuil_parent_active %}active {% endblock %}
+{% block body%}
+<div class="main">
+      <div class="container">
+
+        <!-- BEGIN SIDEBAR & CONTENT -->
+        <div class="row margin-bottom-40">
+          <!-- BEGIN SIDEBAR -->
+          <div class="sidebar col-md-3 col-sm-3">
+            <ul class="list-group margin-bottom-25 sidebar-menu">
+              <li class="list-group-item clearfix"><a href="javascript:;"><i class="fa fa-angle-right"></i> Tableau de bord</a></li>
+			  <li class="list-group-item clearfix"><a href="javascript:;"><i class="fa fa-angle-right"></i> Mes documents</a></li>
+			  <li class="list-group-item clearfix"><a href="javascript:;"><i class="fa fa-angle-right"></i> Demande de tarification</a></li>
+              <li class="list-group-item clearfix"><a href="javascript:;"><i class="fa fa-angle-right"></i> Attestations</a></li>
+              <li class="list-group-item clearfix"><a href="javascript:;"><i class="fa fa-angle-right"></i> Messages</a></li>
+			  <li class="list-group-item clearfix"><a href="javascript:;"><i class="fa fa-angle-right"></i> Mon profil</a></li>
+
+            </ul>
+          </div>
+          <!-- END SIDEBAR -->
+
+          <!-- BEGIN CONTENT -->
+          <div class="col-md-9 col-sm-9">
+            <h1>Votre tableau de bord</h1>
+			<div class="alert alert-info">
+				<h2>Bienvenu {{app.user.username}} {{app.user.userfirstname}}</h2>
+				<p align="right"><a href="">Masquer cette notification</a></p>
+			</div>
+            <div class="content-form-page">
+              <div class="row">
+                <div class="col-md-5 col-sm-5">
+					<h4>Mes coordonnées</h4>
+					<p><strong>Nom Prenom :</strong>{{app.user.username}} {{app.user.userfirstname}}</p>
+					<p><strong>Prenom :</strong>{{app.user.userfirstname}}</p>
+					<p><strong>Email :</strong>{{app.user.mail}}</p>
+					<p><strong>Téléphone :</strong>{{app.user.telephone}}</p>
+					<p><strong>Adresse: :</strong>{{app.user.adresseEntreprise}}</p>
+					<p><strong>Ville: :</strong>{{app.user.ville}}</p>
+					<button class="btn btn-primary">Modifier <i class="fa fa-edit"></i></button>
+                </div>
+				 <div class="col-md-7 col-sm-7">
+					<h4>Ma société</h4>
+					<p><strong>Raison sociale :</strong>{{app.user.raisonSociale}}</p>
+					<p><strong>Forme juridique :</strong>{{app.user.formeJuridique}}</p>
+					<p><strong>N° SIRET :</strong>{{app.user.numeroSiret}}</p>
+					<p><strong>Date de création :</strong>{{app.user.dateCreation |date('d-M-Y')}}</p>
+					<p><strong>Nombre de salariés :</strong>{{app.user.nombreDeSalarie}}</p>
+					<p><strong>Chiffre d'affaire :</strong>{{app.user.chiffreAffaire}}</p>
+					<button class="btn btn-primary">Modifier <i class="fa fa-edit"></i></button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- END CONTENT -->
+        </div>
+        <!-- END SIDEBAR & CONTENT -->
+      </div>
+    </div>
+{% endblock %}

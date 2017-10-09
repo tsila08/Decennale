@@ -1,0 +1,127 @@
+{% extends "::layout.html.twig" %}
+{% block title %}{{ parent() }}-Créer un compte {% endblock %}	
+
+{% block body_avec_pop_up %}
+{% endblock %}
+
+{% block body_sans_pop_up %}
+{{parent()}}
+{% endblock %}
+{% block contenu %}
+		<br>
+		<h2>Créer un compte</h2>
+		<div class="registration-grids">
+			<div class="reg-form">
+				<div class="reg">
+					 <p>Veuillez fournir les renseignements suivants pour continuer.</p>
+					 <p>Si vous avez déjà un compte, <a href="{{path('bds_login')}}">Connectez-vous</a></p>
+					 {% if form_errors(form)%}
+					 <div class="alert alert-danger">  {{ form_errors(form) }} </div>
+					 {% endif %}
+					 {% if (message) %}
+						<div class="alert alert-warning">  {{ message }} </div>
+					 {% endif %}
+					 <form  method="post" action="{{path('bds_utilisateur_creercompte')}}" {{ form_enctype(form) }}>
+						<ul>
+							<li class="text-info">Type d'activité * : </li>
+							<li>{{ form_widget(form.typeCompteString) }}</li>
+						</ul>
+						<ul>
+							<li class="text-info">Photo * : </li>
+							<li>{{ form_widget(form.photoProfil) }}</li>
+						</ul>
+						<ul>
+							<li class="text-info">Nom * : </li>
+							<li>{{ form_widget(form.username) }}</li>
+						</ul>
+						<ul>
+							<li class="text-info">Entreprise : </li>
+							<li>{{ form_widget(form.nomEntreprise) }}</li>
+						</ul>
+						<ul>
+							<li class="text-info">Mail *: </li>
+							<li>{{ form_widget(form.mail) }}</li>
+						</ul>				 
+						<ul>
+							<li class="text-info">Mot de passe  * : </li>
+							<li>{{ form_widget(form.password) }}</li>
+						</ul>
+						<ul>
+							<li class="text-info">Confirmer MDP*:</li>
+							<li>{{ form_widget(form.confirmationMdp) }}</li>
+						</ul>
+						<ul>
+							<li class="text-info">Télephone * : </li>
+							<li>{{ form_widget(form.telephone) }}</li>
+						</ul>
+						<ul>
+							<li class="text-info">Adresse : </li>
+							<li>{{ form_widget(form.adresse) }}</li>
+						</ul>				 
+						<ul>
+							<li class="text-info">Ville  * : </li>
+							<li>{{ form_widget(form.ville) }}</li>
+						</ul>
+						{{form_rest(form) }}
+						<p class="click">En cliquant sur ce bouton, vous acceptez nos  <a href="{{path('bds_routine_a_propos_du_site')}}">conditions générales d'utilisation.</a></p> 
+						 <p>Votre compte sera crée et vous serrez rediriger vers la page d'authentification. Vous pouvez commencer à vous connecter avec l'adresse mail et le mot de passe que avez choisi. </p>	
+						 <input type="submit" value="Creer un compte">
+						 
+					 </form> 
+
+				 </div>
+				 
+			</div>
+			<div class="reg-right">
+				 <h3>Pour vous entrepreneurs</h3>
+				 <div class="strip"></div>
+				 <p>Ce site vous permet de créer un compte avec lequel vous pourrez
+					présenter vos produits et vos services pour les mettre en ligne et
+					les proposer à d'autres entrepreneurs hommes ou femmes d'affaires.
+					<br>
+					Nous nous chargerons de publier et d’émettre les publicités
+					concernant vos produits et services. L’accrocheur et les descriptions
+					concernant les produits seront rédigés par le propriétaire des
+					produits lui-même.
+					<br>Les entrepreneurs acheteurs se soumettront aux mêmes conditions que
+					les particuliers
+
+
+				</p>
+				 <h3 class="lorem">Pour vous  porteurs de projets ou futures relations d'affaires</h3>
+				 <div class="strip"></div>
+				 <p>   Ce site vous offrira divers services pour faciliter la préparation de
+					votre projet, accompagner son lancement ou renforcer l'exploitation de
+					votre activité. Vous y verrez des conseils, des vidéos, des
+					interviews, vous pourrez suivre des programmes qui vont  changer votre
+					quotidien professionnel et confirmer votre réussite  d'entrepreneur
+					car « on ne naît pas entrepreneur, on le devient »
+					<br>
+					<h4>Choisissez votre type d’activité</h4>
+					<div class="strip"></div>
+					<p>Entrer dans l’accueil puis choisir les catégories qui vous
+					conviennent : Hypestyle, Bien-être, Art de manger
+
+					</p>
+				</p>
+				
+				<h3>Les avantages apportés par MYTSENA</h3>
+				 <div class="strip"></div>
+				 <p>Ce site permet de faciliter votre mode de vie au quotidien. MYTSENA
+					aide l'entrepreneur à trouver auprès des autres entrepreneurs des
+					partenaires potentiels, des solutions d'activités communes, et des
+					réseaux de relations pour accéder aux informations, aux
+					collaborateurs et aux ressources qui vous permettent d'avancer plus
+					sûrement et plus activement.
+
+					<br>
+					Votre temps est votre première ressource : pour passer  vos commandes
+					sans vous déplacer, il suffit de vous inscrire pour pouvoir profiter
+					des offres et facilitations exceptionnelles MYTSENA.
+
+				</p>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+{% endblock %}
+

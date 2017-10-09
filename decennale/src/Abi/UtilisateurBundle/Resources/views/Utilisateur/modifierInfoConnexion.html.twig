@@ -1,0 +1,64 @@
+{% extends "::layout.html.twig" %}
+{% block title %}{{ parent() }}-Modifier vos informations de connexion {% endblock %}	
+
+{% block body_avec_pop_up %}
+{% endblock %}
+
+{% block body_sans_pop_up %}
+{{parent()}}
+{% endblock %}
+{% block contenu %}
+		<br>
+		<h2>Modifier vos informations de connexion</h2>
+		<div class="registration-grids">
+			<div class="reg-form">
+				<div class="reg">
+					 
+					{% if form_errors(form)%}
+					 <div class="alert alert-danger">  {{ form_errors(form) }} </div>
+					 {% endif %}
+					 {% if (message) %}
+						<div class="alert alert-warning">  {{ message }} </div>
+					 {% endif %}
+					 <form  method="post" action="{{path('bds_utilisateur_modifier_info_connexion')}}" {{ form_enctype(form) }}>
+						<ul>
+							<li class="text-info">Ancien Mdp * : </li>
+							<li>{{ form_widget(form.oldPassword) }}</li>
+						</ul>
+						<ul>
+							<li class="text-info">Nouveau Mdp * : </li>
+							<li>{{ form_widget(form.password) }}</li>
+						</ul>
+						<ul>
+							<li class="text-info">Confirmer nouv Mdp * : </li>
+							<li>{{ form_widget(form.confirmationMdp) }}</li>
+						</ul>
+						<ul>
+							<li class="text-info">Mail* : </li>
+							<li>{{ form_widget(form.mail) }}</li>
+						</ul>
+						
+						{{form_rest(form) }}
+						<p class="click">Pour modifier votre profil  <a href="{{path('bds_utilisateur_modifier_profil')}}">cliquer ici.</a></p> 
+						 <input type="submit" value="Modifier vos informations de connexion">
+						 
+					 </form> 
+
+				 </div>
+				 
+			</div>
+			<div class="reg-right">
+				 {% if (app.user.photoProfil) %}
+					<ul>
+						<span class="text-info">Photo profil actuelle : </span>
+						<img src="{{asset('photo/Utilisateur/')}}{{app.user.photoProfil}}" class="img-responsive" alt=""/>
+					</ul>
+				 {% endif %}
+				 
+				 
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<br>
+{% endblock %}
+

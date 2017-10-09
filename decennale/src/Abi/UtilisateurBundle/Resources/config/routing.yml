@@ -1,0 +1,38 @@
+abi_utilisateur_login:
+    pattern: /connexion
+    defaults: { _controller: AbiUtilisateurBundle:Utilisateur:login }
+abi_utilisateur_login_check:
+    pattern: /verification_connexion
+abi_utilisateur_logout:
+    pattern : /deconnexion
+abi_utilisateur_creercompte:
+    pattern:  /creer_compte/
+    defaults: { _controller: AbiUtilisateurBundle:Utilisateur:creerCompte}
+abi_utilisateur_creercompte_admin:
+    pattern:  /gerant/creer_compte_admin/
+    defaults: { _controller: AbiUtilisateurBundle:Utilisateur:creerCompteAdmin}
+abi_utilisateur_mon_compte:
+    pattern:  /mon_compte/
+    defaults: { _controller: AbiUtilisateurBundle:Utilisateur:monCompte}
+abi_utilisateur_modifier_profil:
+    pattern:  /modifier_profil/
+    defaults: { _controller: AbiUtilisateurBundle:Utilisateur:modifierProfil}
+abi_utilisateur_modifier_info_connexion:
+    pattern:  /modifier_info_connexion/
+    defaults: { _controller: AbiUtilisateurBundle:Utilisateur:modifierInfoConnexion}
+abi_utilisateur_mot_de_passe_oublie:
+    pattern:  /mot_de_passe_oublie/
+    defaults: { _controller: AbiUtilisateurBundle:Utilisateur:motDePasseOublie}
+abi_utilisateur_verifier_recuperer_mot_de_passe:
+    pattern:  /verifier_recuperer_mot_de_passe/{mail}
+    defaults: { _controller: AbiUtilisateurBundle:Utilisateur:verifierRecupererMotDePasse}
+abi_utilisateur_recuperer_mot_de_passe:
+    pattern:  /recuperer_mot_de_passe/{mail}
+    defaults: { _controller: AbiUtilisateurBundle:Utilisateur:recupererMotDePasse}
+abi_utilisateur_reinitialiser_mot_de_passe:
+    pattern:  /reinitialiser_mot_de_passe/{mail}/{motDePasse}
+    defaults: { _controller: AbiUtilisateurBundle:Utilisateur:reinitialiserMotDePasse}
+abi_utilisateur_recuperer_mot_de_passe_effectue:
+    pattern:  /recuperer_mot_de_passe_effectue/
+    defaults: { _controller: AbiUtilisateurBundle:Utilisateur:recupererMotDePasseEffectue}
+

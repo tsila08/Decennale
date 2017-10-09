@@ -1,0 +1,39 @@
+{% extends "::layout.html.twig" %}
+{% block title %}{{ parent() }}-Recuperer votre compte {% endblock %}	
+
+{% block body_avec_pop_up %}
+{% endblock %}
+
+{% block body_sans_pop_up %}
+{{parent()}}
+{% endblock %}
+{% block contenu %}
+
+		<div class="login-page">
+			   <div class="account_grid">
+			   <div class="col-md-6 login-left wow fadeInLeft" data-wow-delay="0.4s">
+			  	 <h2>Récuperer votre compte</h2>
+				 <h4>S'il ne s'agit pas de votre compte, veuillez <a class="forgot" href="{{path('bds_utilisateur_mot_de_passe_oublie')}}"> saisir votre adresse mail.</a> </h4>
+				 <p>Si vous avez aussi oublié votre adresse mail, veuillez nous contacter par télephone.</p>
+				 
+			   </div>
+			   <div class="col-md-6 login-right wow fadeInRight" data-wow-delay="0.4s">
+				<h4>S'agit-t-il de votre compte ? </h4>
+				  <div>
+					<span>Nom : <label> {{ nom }} </label></span>
+				  </div>
+				  <div>
+					<span>Adresse mail : <label>{{ mail }}</label></span>
+				  </div>
+				En continuant, nous allons vous envoyer un lien pour récupérer votre compte à votre adresse mail.
+				  <a class="forgot" href="{{path('bds_utilisateur_recuperer_mot_de_passe',{'mail':mail })}}">Oui, il s'agit de mon compte.</a>
+				  
+			    
+			   </div>	
+			   <div class="clearfix"> </div>
+			 </div>
+		   </div>
+	
+	
+{% endblock %}
+

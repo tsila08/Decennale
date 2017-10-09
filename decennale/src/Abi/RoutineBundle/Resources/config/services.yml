@@ -1,0 +1,4 @@
+services:
+#    abi_routine.example:
+#        class: Abi\RoutineBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

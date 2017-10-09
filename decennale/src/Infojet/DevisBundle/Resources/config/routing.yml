@@ -1,0 +1,24 @@
+infojet_service_devis_decennale_constructeur:
+    path:     /service/devis_decennale_constructeur
+    defaults: { _controller: InfojetDevisBundle:Service:devisDecennaleConstructeur }
+infojet_service_devis_decennale_architecte:
+    path:     /service/devis_decennale_architecte
+    defaults: { _controller: InfojetDevisBundle:Service:devisDecennaleArchitecte }
+infojet_service_obligation:
+    path:     /service/obligation
+    defaults: { _controller: InfojetDevisBundle:Service:obligation }
+infojet_service_resiliation:
+    path:     /service/resiliation
+    defaults: { _controller: InfojetDevisBundle:Service:resiliation }	
+infojet_service_souscription:
+    path:     /service/souscription
+    defaults: { _controller: InfojetDevisBundle:Service:souscription }
+infojet_service_documentation:
+    path:     /service/documentation
+    defaults: { _controller: InfojetDevisBundle:Service:documentation }		
+infojet_devis_demander_confirmation_mail_demandeur:
+    path:     /demander_confirmation_mail_demandeur/{mail}
+    defaults: { _controller: InfojetDevisBundle:Demande:demanderConfirmationMail }
+infojet_devis_confirmer_mail_demandeur:
+    path:     /confirmer_mail_demandeur/{id_demande}/{code_validation}
+    defaults: { _controller: InfojetDevisBundle:Demande:confirmerMail }

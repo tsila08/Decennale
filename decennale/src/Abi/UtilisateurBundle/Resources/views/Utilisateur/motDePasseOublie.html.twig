@@ -1,0 +1,44 @@
+{% extends "::layout.html.twig" %}
+{% block title %}{{ parent() }}-Mot de passe oublié {% endblock %}	
+
+{% block body_avec_pop_up %}
+{% endblock %}
+
+{% block body_sans_pop_up %}
+{{parent()}}
+{% endblock %}
+{% block contenu %}
+
+		<div class="login-page">
+			   <div class="account_grid">
+			   <div class="col-md-6 login-left wow fadeInLeft" data-wow-delay="0.4s">
+			  	 <h2>Récuperer votre compte</h2>
+				 <p>Si vous avez oublié votre mot de passe, 
+				 vous pouvez demander la reinitialisation de votre en donnant votre adresse mail. Si vous avez aussi oublié votre adresse mail, veuillez nous contacter par télephone.</p>
+				 
+			   </div>
+			   <div class="col-md-6 login-right wow fadeInRight" data-wow-delay="0.4s">
+				{% if message %}
+						<div class="alert alert-danger"> 
+						<h4>{{message}}</h4>
+							
+						</div>
+					{% endif %}
+				<form method="post" action="{{path('bds_utilisateur_mot_de_passe_oublie')}}" >
+				  <div>
+					<span>Adresse mail: <label>*</label></span>
+					{{ form_widget(form.mail) }}
+				  </div>
+				 {{form_rest(form) }}
+				  <input type="submit" value="Récuperer mot de passe">
+				  
+				  
+			    </form>
+			   </div>	
+			   <div class="clearfix"> </div>
+			 </div>
+		   </div>
+	
+	
+{% endblock %}
+

@@ -1,0 +1,17 @@
+{% extends "::layout.html.twig" %}
+{% block title %}{{ parent() }}-Recuperer votre compte{% endblock %}	
+
+{% block body_avec_pop_up %}
+{% endblock %}
+
+{% block body_sans_pop_up %}
+{{parent()}}
+{% endblock %}
+{% block contenu %}
+		<br>
+		<h2>Votre demande a été prise en compte</h2>
+		Nous allons vous envoyer (par mail sauf indication spécifique de votre part) un lien vous permettant de reinitialiser votre mot de passe.
+		<p>Pour recevoir le lien par sms, veuillez nous contacter. </p>
+		<br>
+{% endblock %}
+
