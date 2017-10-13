@@ -1,6 +1,6 @@
 <?php
 
-namespace Devis\DecennaleBundle\Entity;
+namespace Abi\RoutineBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -64,4 +64,152 @@ class AbsMessagdevis
     private $devisDate;
 
 
+
+    /**
+     * Get devisId
+     *
+     * @return integer 
+     */
+    public function getDevisId()
+    {
+        return $this->devisId;
+    }
+
+    /**
+     * Set devisRefclient
+     *
+     * @param string $devisRefclient
+     * @return AbsMessagdevis
+     */
+    public function setDevisRefclient($devisRefclient)
+    {
+        $this->devisRefclient = $devisRefclient;
+
+        return $this;
+    }
+
+    /**
+     * Get devisRefclient
+     *
+     * @return string 
+     */
+    public function getDevisRefclient()
+    {
+        return $this->devisRefclient;
+    }
+
+    /**
+     * Set devisRefdevis
+     *
+     * @param string $devisRefdevis
+     * @return AbsMessagdevis
+     */
+    public function setDevisRefdevis($devisRefdevis)
+    {
+        $this->devisRefdevis = $devisRefdevis;
+
+        return $this;
+    }
+
+    /**
+     * Get devisRefdevis
+     *
+     * @return string 
+     */
+    public function getDevisRefdevis()
+    {
+        return $this->devisRefdevis;
+    }
+
+    /**
+     * Set devisTypecontrat
+     *
+     * @param string $devisTypecontrat
+     * @return AbsMessagdevis
+     */
+    public function setDevisTypecontrat($devisTypecontrat)
+    {
+        $this->devisTypecontrat = $devisTypecontrat;
+
+        return $this;
+    }
+
+    /**
+     * Get devisTypecontrat
+     *
+     * @return string 
+     */
+    public function getDevisTypecontrat()
+    {
+        return $this->devisTypecontrat;
+    }
+
+    /**
+     * Set devisEcheance
+     *
+     * @param string $devisEcheance
+     * @return AbsMessagdevis
+     */
+    public function setDevisEcheance($devisEcheance)
+    {
+        $this->devisEcheance = $devisEcheance;
+
+        return $this;
+    }
+
+    /**
+     * Get devisEcheance
+     *
+     * @return string 
+     */
+    public function getDevisEcheance()
+    {
+        return $this->devisEcheance;
+    }
+
+    /**
+     * Set devisEtat
+     *
+     * @param integer $devisEtat
+     * @return AbsMessagdevis
+     */
+    public function setDevisEtat($devisEtat)
+    {
+        $this->devisEtat = $devisEtat;
+
+        return $this;
+    }
+
+    /**
+     * Get devisEtat
+     *
+     * @return integer 
+     */
+    public function getDevisEtat()
+    {
+        return $this->devisEtat;
+    }
+
+    /**
+     * Set devisDate
+     *
+     * @param \DateTime $devisDate
+     * @return AbsMessagdevis
+     */
+    public function setDevisDate($devisDate)
+    {
+        $this->devisDate = $devisDate;
+
+        return $this;
+    }
+
+    /**
+     * Get devisDate
+     *
+     * @return \DateTime 
+     */
+    public function getDevisDate()
+    {
+        return $this->devisDate;
+    }
 }

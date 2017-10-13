@@ -1,6 +1,6 @@
 <?php
 
-namespace Devis\DecennaleBundle\Entity;
+namespace Abi\RoutineBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -57,4 +57,129 @@ class MdlNosReferances
     private $nrefrEtat;
 
 
+
+    /**
+     * Get nrefrId
+     *
+     * @return integer 
+     */
+    public function getNrefrId()
+    {
+        return $this->nrefrId;
+    }
+
+    /**
+     * Set nrefrTitre
+     *
+     * @param string $nrefrTitre
+     * @return MdlNosReferances
+     */
+    public function setNrefrTitre($nrefrTitre)
+    {
+        $this->nrefrTitre = $nrefrTitre;
+
+        return $this;
+    }
+
+    /**
+     * Get nrefrTitre
+     *
+     * @return string 
+     */
+    public function getNrefrTitre()
+    {
+        return $this->nrefrTitre;
+    }
+
+    /**
+     * Set nrefrIcon
+     *
+     * @param string $nrefrIcon
+     * @return MdlNosReferances
+     */
+    public function setNrefrIcon($nrefrIcon)
+    {
+        $this->nrefrIcon = $nrefrIcon;
+
+        return $this;
+    }
+
+    /**
+     * Get nrefrIcon
+     *
+     * @return string 
+     */
+    public function getNrefrIcon()
+    {
+        return $this->nrefrIcon;
+    }
+
+    /**
+     * Set nrefrTexte
+     *
+     * @param string $nrefrTexte
+     * @return MdlNosReferances
+     */
+    public function setNrefrTexte($nrefrTexte)
+    {
+        $this->nrefrTexte = $nrefrTexte;
+
+        return $this;
+    }
+
+    /**
+     * Get nrefrTexte
+     *
+     * @return string 
+     */
+    public function getNrefrTexte()
+    {
+        return $this->nrefrTexte;
+    }
+
+    /**
+     * Set nrefrOrdre
+     *
+     * @param integer $nrefrOrdre
+     * @return MdlNosReferances
+     */
+    public function setNrefrOrdre($nrefrOrdre)
+    {
+        $this->nrefrOrdre = $nrefrOrdre;
+
+        return $this;
+    }
+
+    /**
+     * Get nrefrOrdre
+     *
+     * @return integer 
+     */
+    public function getNrefrOrdre()
+    {
+        return $this->nrefrOrdre;
+    }
+
+    /**
+     * Set nrefrEtat
+     *
+     * @param integer $nrefrEtat
+     * @return MdlNosReferances
+     */
+    public function setNrefrEtat($nrefrEtat)
+    {
+        $this->nrefrEtat = $nrefrEtat;
+
+        return $this;
+    }
+
+    /**
+     * Get nrefrEtat
+     *
+     * @return integer 
+     */
+    public function getNrefrEtat()
+    {
+        return $this->nrefrEtat;
+    }
 }

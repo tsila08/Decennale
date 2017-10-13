@@ -1,6 +1,6 @@
 <?php
 
-namespace Devis\DecennaleBundle\Entity;
+namespace Abi\RoutineBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -57,4 +57,129 @@ class MdlTarification
     private $tarfEtat;
 
 
+
+    /**
+     * Get tarfId
+     *
+     * @return integer 
+     */
+    public function getTarfId()
+    {
+        return $this->tarfId;
+    }
+
+    /**
+     * Set tarfTitre
+     *
+     * @param string $tarfTitre
+     * @return MdlTarification
+     */
+    public function setTarfTitre($tarfTitre)
+    {
+        $this->tarfTitre = $tarfTitre;
+
+        return $this;
+    }
+
+    /**
+     * Get tarfTitre
+     *
+     * @return string 
+     */
+    public function getTarfTitre()
+    {
+        return $this->tarfTitre;
+    }
+
+    /**
+     * Set tarfIcon
+     *
+     * @param string $tarfIcon
+     * @return MdlTarification
+     */
+    public function setTarfIcon($tarfIcon)
+    {
+        $this->tarfIcon = $tarfIcon;
+
+        return $this;
+    }
+
+    /**
+     * Get tarfIcon
+     *
+     * @return string 
+     */
+    public function getTarfIcon()
+    {
+        return $this->tarfIcon;
+    }
+
+    /**
+     * Set tarfTexte
+     *
+     * @param string $tarfTexte
+     * @return MdlTarification
+     */
+    public function setTarfTexte($tarfTexte)
+    {
+        $this->tarfTexte = $tarfTexte;
+
+        return $this;
+    }
+
+    /**
+     * Get tarfTexte
+     *
+     * @return string 
+     */
+    public function getTarfTexte()
+    {
+        return $this->tarfTexte;
+    }
+
+    /**
+     * Set tarfOrdre
+     *
+     * @param integer $tarfOrdre
+     * @return MdlTarification
+     */
+    public function setTarfOrdre($tarfOrdre)
+    {
+        $this->tarfOrdre = $tarfOrdre;
+
+        return $this;
+    }
+
+    /**
+     * Get tarfOrdre
+     *
+     * @return integer 
+     */
+    public function getTarfOrdre()
+    {
+        return $this->tarfOrdre;
+    }
+
+    /**
+     * Set tarfEtat
+     *
+     * @param integer $tarfEtat
+     * @return MdlTarification
+     */
+    public function setTarfEtat($tarfEtat)
+    {
+        $this->tarfEtat = $tarfEtat;
+
+        return $this;
+    }
+
+    /**
+     * Get tarfEtat
+     *
+     * @return integer 
+     */
+    public function getTarfEtat()
+    {
+        return $this->tarfEtat;
+    }
 }

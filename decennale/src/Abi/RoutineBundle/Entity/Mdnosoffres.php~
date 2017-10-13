@@ -1,0 +1,53 @@
+<?php
+
+namespace Abi\RoutineBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Mdnosoffres
+ *
+ * @ORM\Table(name="mdnosoffres")
+ * @ORM\Entity
+ */
+class Mdnosoffres
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="off_id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $offId;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="off_refart", type="integer", nullable=false)
+     */
+    private $offRefart;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="off_description", type="string", length=255, nullable=false)
+     */
+    private $offDescription;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="off_etat", type="integer", nullable=false)
+     */
+    private $offEtat;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="off_date", type="date", nullable=false)
+     */
+    private $offDate;
+
+
+}

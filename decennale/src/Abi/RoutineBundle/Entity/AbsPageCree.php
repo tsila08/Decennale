@@ -1,6 +1,6 @@
 <?php
 
-namespace Devis\DecennaleBundle\Entity;
+namespace Abi\RoutineBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -50,4 +50,106 @@ class AbsPageCree
     private $pagecreeDate;
 
 
+
+    /**
+     * Get pagecreeId
+     *
+     * @return integer 
+     */
+    public function getPagecreeId()
+    {
+        return $this->pagecreeId;
+    }
+
+    /**
+     * Set pagecreeTitre
+     *
+     * @param string $pagecreeTitre
+     * @return AbsPageCree
+     */
+    public function setPagecreeTitre($pagecreeTitre)
+    {
+        $this->pagecreeTitre = $pagecreeTitre;
+
+        return $this;
+    }
+
+    /**
+     * Get pagecreeTitre
+     *
+     * @return string 
+     */
+    public function getPagecreeTitre()
+    {
+        return $this->pagecreeTitre;
+    }
+
+    /**
+     * Set pagecreeType
+     *
+     * @param string $pagecreeType
+     * @return AbsPageCree
+     */
+    public function setPagecreeType($pagecreeType)
+    {
+        $this->pagecreeType = $pagecreeType;
+
+        return $this;
+    }
+
+    /**
+     * Get pagecreeType
+     *
+     * @return string 
+     */
+    public function getPagecreeType()
+    {
+        return $this->pagecreeType;
+    }
+
+    /**
+     * Set pagecreeEtat
+     *
+     * @param integer $pagecreeEtat
+     * @return AbsPageCree
+     */
+    public function setPagecreeEtat($pagecreeEtat)
+    {
+        $this->pagecreeEtat = $pagecreeEtat;
+
+        return $this;
+    }
+
+    /**
+     * Get pagecreeEtat
+     *
+     * @return integer 
+     */
+    public function getPagecreeEtat()
+    {
+        return $this->pagecreeEtat;
+    }
+
+    /**
+     * Set pagecreeDate
+     *
+     * @param \DateTime $pagecreeDate
+     * @return AbsPageCree
+     */
+    public function setPagecreeDate($pagecreeDate)
+    {
+        $this->pagecreeDate = $pagecreeDate;
+
+        return $this;
+    }
+
+    /**
+     * Get pagecreeDate
+     *
+     * @return \DateTime 
+     */
+    public function getPagecreeDate()
+    {
+        return $this->pagecreeDate;
+    }
 }

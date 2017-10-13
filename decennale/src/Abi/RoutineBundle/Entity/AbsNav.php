@@ -1,6 +1,6 @@
 <?php
 
-namespace Devis\DecennaleBundle\Entity;
+namespace Abi\RoutineBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -57,4 +57,129 @@ class AbsNav
     private $navEtat;
 
 
+
+    /**
+     * Get navId
+     *
+     * @return integer 
+     */
+    public function getNavId()
+    {
+        return $this->navId;
+    }
+
+    /**
+     * Set navTitre
+     *
+     * @param string $navTitre
+     * @return AbsNav
+     */
+    public function setNavTitre($navTitre)
+    {
+        $this->navTitre = $navTitre;
+
+        return $this;
+    }
+
+    /**
+     * Get navTitre
+     *
+     * @return string 
+     */
+    public function getNavTitre()
+    {
+        return $this->navTitre;
+    }
+
+    /**
+     * Set navUrl
+     *
+     * @param string $navUrl
+     * @return AbsNav
+     */
+    public function setNavUrl($navUrl)
+    {
+        $this->navUrl = $navUrl;
+
+        return $this;
+    }
+
+    /**
+     * Get navUrl
+     *
+     * @return string 
+     */
+    public function getNavUrl()
+    {
+        return $this->navUrl;
+    }
+
+    /**
+     * Set navOrdre
+     *
+     * @param integer $navOrdre
+     * @return AbsNav
+     */
+    public function setNavOrdre($navOrdre)
+    {
+        $this->navOrdre = $navOrdre;
+
+        return $this;
+    }
+
+    /**
+     * Get navOrdre
+     *
+     * @return integer 
+     */
+    public function getNavOrdre()
+    {
+        return $this->navOrdre;
+    }
+
+    /**
+     * Set navType
+     *
+     * @param string $navType
+     * @return AbsNav
+     */
+    public function setNavType($navType)
+    {
+        $this->navType = $navType;
+
+        return $this;
+    }
+
+    /**
+     * Get navType
+     *
+     * @return string 
+     */
+    public function getNavType()
+    {
+        return $this->navType;
+    }
+
+    /**
+     * Set navEtat
+     *
+     * @param integer $navEtat
+     * @return AbsNav
+     */
+    public function setNavEtat($navEtat)
+    {
+        $this->navEtat = $navEtat;
+
+        return $this;
+    }
+
+    /**
+     * Get navEtat
+     *
+     * @return integer 
+     */
+    public function getNavEtat()
+    {
+        return $this->navEtat;
+    }
 }

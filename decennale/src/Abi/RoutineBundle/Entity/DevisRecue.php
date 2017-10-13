@@ -1,6 +1,6 @@
 <?php
 
-namespace Devis\DecennaleBundle\Entity;
+namespace Abi\RoutineBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -50,4 +50,106 @@ class DevisRecue
     private $dvrDate;
 
 
+
+    /**
+     * Get dvrId
+     *
+     * @return integer 
+     */
+    public function getDvrId()
+    {
+        return $this->dvrId;
+    }
+
+    /**
+     * Set dvrRefclient
+     *
+     * @param string $dvrRefclient
+     * @return DevisRecue
+     */
+    public function setDvrRefclient($dvrRefclient)
+    {
+        $this->dvrRefclient = $dvrRefclient;
+
+        return $this;
+    }
+
+    /**
+     * Get dvrRefclient
+     *
+     * @return string 
+     */
+    public function getDvrRefclient()
+    {
+        return $this->dvrRefclient;
+    }
+
+    /**
+     * Set dvrRefdevis
+     *
+     * @param string $dvrRefdevis
+     * @return DevisRecue
+     */
+    public function setDvrRefdevis($dvrRefdevis)
+    {
+        $this->dvrRefdevis = $dvrRefdevis;
+
+        return $this;
+    }
+
+    /**
+     * Get dvrRefdevis
+     *
+     * @return string 
+     */
+    public function getDvrRefdevis()
+    {
+        return $this->dvrRefdevis;
+    }
+
+    /**
+     * Set dvrEtat
+     *
+     * @param integer $dvrEtat
+     * @return DevisRecue
+     */
+    public function setDvrEtat($dvrEtat)
+    {
+        $this->dvrEtat = $dvrEtat;
+
+        return $this;
+    }
+
+    /**
+     * Get dvrEtat
+     *
+     * @return integer 
+     */
+    public function getDvrEtat()
+    {
+        return $this->dvrEtat;
+    }
+
+    /**
+     * Set dvrDate
+     *
+     * @param \DateTime $dvrDate
+     * @return DevisRecue
+     */
+    public function setDvrDate($dvrDate)
+    {
+        $this->dvrDate = $dvrDate;
+
+        return $this;
+    }
+
+    /**
+     * Get dvrDate
+     *
+     * @return \DateTime 
+     */
+    public function getDvrDate()
+    {
+        return $this->dvrDate;
+    }
 }

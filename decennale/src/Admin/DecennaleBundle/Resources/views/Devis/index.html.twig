@@ -1,0 +1,62 @@
+
+{% extends 'AdminDecennaleBundle::layout.html.twig' %}
+
+{% block body %}
+
+<div class="container">
+  <h2>Gestion de devis</h2>
+  <p>Total de devis réçue:{{c|length}}</p>            
+  <table class="table table-bordered">
+  <thead>
+      <tr>
+        <th>Ordre</th>
+        <th>Date</th>
+        <th>Devis</th>
+        <th>Client</th>
+        <th>Societé</th>
+        <th>Gestion&Etat</th>
+      </tr>
+    </thead>
+
+<tbody>
+
+{% for i in pageD..pageF%}
+
+
+{% if  i<c|length %}
+
+<tr>
+<td>{{i+1}}</td>
+<td>{{d[i].DvrDate|date('d-m-Y')}}</td>
+<td>{{d[i].DvrRefdevis}}</td>
+<td>{{c[i].clientCivilite}}:{{c[i].clientPrenom}}&nbsp;{{c[i].clientNom}}</td>
+<td>{{s[i].soRaisonSocial}}({{s[i].soFormjuridique}})</td>
+<td></td>
+
+
+
+</tr>
+{% endif %}
+     {% endfor %}   
+
+
+
+ </tbody>
+  </table>
+</div>
+
+<div class="pagination-box">
+            <nav>
+              <ul class="pager">
+                             {% if  pageD>0 %}
+                                  <li><a href="{{ path('admin_decennale_devis', { 'pageD': pageD-10,'pagef' : pageF-10 })}}">Précedent</a></li>
+                             
+                             {% endif %}
+
+                             {% if  pageF<c|length %}
+                                   <li> <a href="{{ path('admin_decennale_devis', { 'pageD': pageD+10,'pagef' : pageF+10})}}">Suivant</a></li>
+                            {% endif %}
+                                </ul>
+            </nav>
+          </div>
+{% endblock%} 

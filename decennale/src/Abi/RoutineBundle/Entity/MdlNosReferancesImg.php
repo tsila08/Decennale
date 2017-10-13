@@ -1,6 +1,6 @@
 <?php
 
-namespace Devis\DecennaleBundle\Entity;
+namespace Abi\RoutineBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -43,4 +43,83 @@ class MdlNosReferancesImg
     private $nrefrimgEtat;
 
 
+
+    /**
+     * Get nrefrimgId
+     *
+     * @return integer 
+     */
+    public function getNrefrimgId()
+    {
+        return $this->nrefrimgId;
+    }
+
+    /**
+     * Set nrefrimgRef
+     *
+     * @param integer $nrefrimgRef
+     * @return MdlNosReferancesImg
+     */
+    public function setNrefrimgRef($nrefrimgRef)
+    {
+        $this->nrefrimgRef = $nrefrimgRef;
+
+        return $this;
+    }
+
+    /**
+     * Get nrefrimgRef
+     *
+     * @return integer 
+     */
+    public function getNrefrimgRef()
+    {
+        return $this->nrefrimgRef;
+    }
+
+    /**
+     * Set nrefrimgImg
+     *
+     * @param string $nrefrimgImg
+     * @return MdlNosReferancesImg
+     */
+    public function setNrefrimgImg($nrefrimgImg)
+    {
+        $this->nrefrimgImg = $nrefrimgImg;
+
+        return $this;
+    }
+
+    /**
+     * Get nrefrimgImg
+     *
+     * @return string 
+     */
+    public function getNrefrimgImg()
+    {
+        return $this->nrefrimgImg;
+    }
+
+    /**
+     * Set nrefrimgEtat
+     *
+     * @param integer $nrefrimgEtat
+     * @return MdlNosReferancesImg
+     */
+    public function setNrefrimgEtat($nrefrimgEtat)
+    {
+        $this->nrefrimgEtat = $nrefrimgEtat;
+
+        return $this;
+    }
+
+    /**
+     * Get nrefrimgEtat
+     *
+     * @return integer 
+     */
+    public function getNrefrimgEtat()
+    {
+        return $this->nrefrimgEtat;
+    }
 }

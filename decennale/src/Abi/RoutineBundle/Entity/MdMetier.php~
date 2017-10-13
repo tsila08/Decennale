@@ -1,0 +1,60 @@
+<?php
+
+namespace Abi\RoutineBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * MdMetier
+ *
+ * @ORM\Table(name="md_metier")
+ * @ORM\Entity
+ */
+class MdMetier
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="mt_id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $mtId;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="mt_titre", type="string", length=200, nullable=false)
+     */
+    private $mtTitre;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="mt_description", type="string", length=250, nullable=false)
+     */
+    private $mtDescription;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="mt_ordre", type="integer", nullable=false)
+     */
+    private $mtOrdre;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="mt_img", type="string", length=200, nullable=false)
+     */
+    private $mtImg;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="mt_etat", type="integer", nullable=false)
+     */
+    private $mtEtat;
+
+
+}

@@ -1,6 +1,6 @@
 <?php
 
-namespace Devis\DecennaleBundle\Entity;
+namespace Abi\RoutineBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -36,4 +36,60 @@ class AbsPageCat
     private $catRefart;
 
 
+
+    /**
+     * Get catId
+     *
+     * @return integer 
+     */
+    public function getCatId()
+    {
+        return $this->catId;
+    }
+
+    /**
+     * Set catRefcat
+     *
+     * @param integer $catRefcat
+     * @return AbsPageCat
+     */
+    public function setCatRefcat($catRefcat)
+    {
+        $this->catRefcat = $catRefcat;
+
+        return $this;
+    }
+
+    /**
+     * Get catRefcat
+     *
+     * @return integer 
+     */
+    public function getCatRefcat()
+    {
+        return $this->catRefcat;
+    }
+
+    /**
+     * Set catRefart
+     *
+     * @param integer $catRefart
+     * @return AbsPageCat
+     */
+    public function setCatRefart($catRefart)
+    {
+        $this->catRefart = $catRefart;
+
+        return $this;
+    }
+
+    /**
+     * Get catRefart
+     *
+     * @return integer 
+     */
+    public function getCatRefart()
+    {
+        return $this->catRefart;
+    }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Devis\DecennaleBundle\Entity;
+namespace Abi\RoutineBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -50,4 +50,106 @@ class AbsTarif
     private $tarifEtat;
 
 
+
+    /**
+     * Get tarifId
+     *
+     * @return integer 
+     */
+    public function getTarifId()
+    {
+        return $this->tarifId;
+    }
+
+    /**
+     * Set tarifMin
+     *
+     * @param integer $tarifMin
+     * @return AbsTarif
+     */
+    public function setTarifMin($tarifMin)
+    {
+        $this->tarifMin = $tarifMin;
+
+        return $this;
+    }
+
+    /**
+     * Get tarifMin
+     *
+     * @return integer 
+     */
+    public function getTarifMin()
+    {
+        return $this->tarifMin;
+    }
+
+    /**
+     * Set tarifMax
+     *
+     * @param integer $tarifMax
+     * @return AbsTarif
+     */
+    public function setTarifMax($tarifMax)
+    {
+        $this->tarifMax = $tarifMax;
+
+        return $this;
+    }
+
+    /**
+     * Get tarifMax
+     *
+     * @return integer 
+     */
+    public function getTarifMax()
+    {
+        return $this->tarifMax;
+    }
+
+    /**
+     * Set tarifPrix
+     *
+     * @param float $tarifPrix
+     * @return AbsTarif
+     */
+    public function setTarifPrix($tarifPrix)
+    {
+        $this->tarifPrix = $tarifPrix;
+
+        return $this;
+    }
+
+    /**
+     * Get tarifPrix
+     *
+     * @return float 
+     */
+    public function getTarifPrix()
+    {
+        return $this->tarifPrix;
+    }
+
+    /**
+     * Set tarifEtat
+     *
+     * @param integer $tarifEtat
+     * @return AbsTarif
+     */
+    public function setTarifEtat($tarifEtat)
+    {
+        $this->tarifEtat = $tarifEtat;
+
+        return $this;
+    }
+
+    /**
+     * Get tarifEtat
+     *
+     * @return integer 
+     */
+    public function getTarifEtat()
+    {
+        return $this->tarifEtat;
+    }
 }

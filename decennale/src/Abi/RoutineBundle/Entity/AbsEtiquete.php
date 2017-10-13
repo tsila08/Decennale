@@ -1,7 +1,5 @@
 <?php
-
-namespace Devis\DecennaleBundle\Entity;
-
+namespace Abi\RoutineBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -64,4 +62,152 @@ class AbsEtiquete
     private $etiqEtat;
 
 
+
+    /**
+     * Get etiqId
+     *
+     * @return integer 
+     */
+    public function getEtiqId()
+    {
+        return $this->etiqId;
+    }
+
+    /**
+     * Set etiqTitle
+     *
+     * @param string $etiqTitle
+     * @return AbsEtiquete
+     */
+    public function setEtiqTitle($etiqTitle)
+    {
+        $this->etiqTitle = $etiqTitle;
+
+        return $this;
+    }
+
+    /**
+     * Get etiqTitle
+     *
+     * @return string 
+     */
+    public function getEtiqTitle()
+    {
+        return $this->etiqTitle;
+    }
+
+    /**
+     * Set etiqDescription
+     *
+     * @param string $etiqDescription
+     * @return AbsEtiquete
+     */
+    public function setEtiqDescription($etiqDescription)
+    {
+        $this->etiqDescription = $etiqDescription;
+
+        return $this;
+    }
+
+    /**
+     * Get etiqDescription
+     *
+     * @return string 
+     */
+    public function getEtiqDescription()
+    {
+        return $this->etiqDescription;
+    }
+
+    /**
+     * Set etiqMotcles
+     *
+     * @param string $etiqMotcles
+     * @return AbsEtiquete
+     */
+    public function setEtiqMotcles($etiqMotcles)
+    {
+        $this->etiqMotcles = $etiqMotcles;
+
+        return $this;
+    }
+
+    /**
+     * Get etiqMotcles
+     *
+     * @return string 
+     */
+    public function getEtiqMotcles()
+    {
+        return $this->etiqMotcles;
+    }
+
+    /**
+     * Set etiqUrl
+     *
+     * @param string $etiqUrl
+     * @return AbsEtiquete
+     */
+    public function setEtiqUrl($etiqUrl)
+    {
+        $this->etiqUrl = $etiqUrl;
+
+        return $this;
+    }
+
+    /**
+     * Get etiqUrl
+     *
+     * @return string 
+     */
+    public function getEtiqUrl()
+    {
+        return $this->etiqUrl;
+    }
+
+    /**
+     * Set etiqTexte
+     *
+     * @param string $etiqTexte
+     * @return AbsEtiquete
+     */
+    public function setEtiqTexte($etiqTexte)
+    {
+        $this->etiqTexte = $etiqTexte;
+
+        return $this;
+    }
+
+    /**
+     * Get etiqTexte
+     *
+     * @return string 
+     */
+    public function getEtiqTexte()
+    {
+        return $this->etiqTexte;
+    }
+
+    /**
+     * Set etiqEtat
+     *
+     * @param integer $etiqEtat
+     * @return AbsEtiquete
+     */
+    public function setEtiqEtat($etiqEtat)
+    {
+        $this->etiqEtat = $etiqEtat;
+
+        return $this;
+    }
+
+    /**
+     * Get etiqEtat
+     *
+     * @return integer 
+     */
+    public function getEtiqEtat()
+    {
+        return $this->etiqEtat;
+    }
 }

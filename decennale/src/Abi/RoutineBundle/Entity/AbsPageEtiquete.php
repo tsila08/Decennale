@@ -1,6 +1,6 @@
 <?php
 
-namespace Devis\DecennaleBundle\Entity;
+namespace Abi\RoutineBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -36,4 +36,60 @@ class AbsPageEtiquete
     private $petqRefarticle;
 
 
+
+    /**
+     * Get petqId
+     *
+     * @return integer 
+     */
+    public function getPetqId()
+    {
+        return $this->petqId;
+    }
+
+    /**
+     * Set petqRefetequette
+     *
+     * @param integer $petqRefetequette
+     * @return AbsPageEtiquete
+     */
+    public function setPetqRefetequette($petqRefetequette)
+    {
+        $this->petqRefetequette = $petqRefetequette;
+
+        return $this;
+    }
+
+    /**
+     * Get petqRefetequette
+     *
+     * @return integer 
+     */
+    public function getPetqRefetequette()
+    {
+        return $this->petqRefetequette;
+    }
+
+    /**
+     * Set petqRefarticle
+     *
+     * @param integer $petqRefarticle
+     * @return AbsPageEtiquete
+     */
+    public function setPetqRefarticle($petqRefarticle)
+    {
+        $this->petqRefarticle = $petqRefarticle;
+
+        return $this;
+    }
+
+    /**
+     * Get petqRefarticle
+     *
+     * @return integer 
+     */
+    public function getPetqRefarticle()
+    {
+        return $this->petqRefarticle;
+    }
 }

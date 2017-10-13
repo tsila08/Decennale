@@ -1,6 +1,6 @@
 <?php
 
-namespace Devis\DecennaleBundle\Entity;
+namespace Abi\RoutineBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -57,4 +57,129 @@ class MdlNosEngagements
     private $engtsEtat;
 
 
+
+    /**
+     * Get engtsId
+     *
+     * @return integer 
+     */
+    public function getEngtsId()
+    {
+        return $this->engtsId;
+    }
+
+    /**
+     * Set engtsTitre
+     *
+     * @param string $engtsTitre
+     * @return MdlNosEngagements
+     */
+    public function setEngtsTitre($engtsTitre)
+    {
+        $this->engtsTitre = $engtsTitre;
+
+        return $this;
+    }
+
+    /**
+     * Get engtsTitre
+     *
+     * @return string 
+     */
+    public function getEngtsTitre()
+    {
+        return $this->engtsTitre;
+    }
+
+    /**
+     * Set engtsIcon
+     *
+     * @param string $engtsIcon
+     * @return MdlNosEngagements
+     */
+    public function setEngtsIcon($engtsIcon)
+    {
+        $this->engtsIcon = $engtsIcon;
+
+        return $this;
+    }
+
+    /**
+     * Get engtsIcon
+     *
+     * @return string 
+     */
+    public function getEngtsIcon()
+    {
+        return $this->engtsIcon;
+    }
+
+    /**
+     * Set engtsTexte
+     *
+     * @param string $engtsTexte
+     * @return MdlNosEngagements
+     */
+    public function setEngtsTexte($engtsTexte)
+    {
+        $this->engtsTexte = $engtsTexte;
+
+        return $this;
+    }
+
+    /**
+     * Get engtsTexte
+     *
+     * @return string 
+     */
+    public function getEngtsTexte()
+    {
+        return $this->engtsTexte;
+    }
+
+    /**
+     * Set engtsOrdre
+     *
+     * @param integer $engtsOrdre
+     * @return MdlNosEngagements
+     */
+    public function setEngtsOrdre($engtsOrdre)
+    {
+        $this->engtsOrdre = $engtsOrdre;
+
+        return $this;
+    }
+
+    /**
+     * Get engtsOrdre
+     *
+     * @return integer 
+     */
+    public function getEngtsOrdre()
+    {
+        return $this->engtsOrdre;
+    }
+
+    /**
+     * Set engtsEtat
+     *
+     * @param integer $engtsEtat
+     * @return MdlNosEngagements
+     */
+    public function setEngtsEtat($engtsEtat)
+    {
+        $this->engtsEtat = $engtsEtat;
+
+        return $this;
+    }
+
+    /**
+     * Get engtsEtat
+     *
+     * @return integer 
+     */
+    public function getEngtsEtat()
+    {
+        return $this->engtsEtat;
+    }
 }

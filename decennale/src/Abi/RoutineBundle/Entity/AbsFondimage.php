@@ -1,6 +1,6 @@
 <?php
 
-namespace Devis\DecennaleBundle\Entity;
+namespace Abi\RoutineBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -71,4 +71,175 @@ class AbsFondimage
     private $fondimgEtat;
 
 
+
+    /**
+     * Get fondimgId
+     *
+     * @return integer 
+     */
+    public function getFondimgId()
+    {
+        return $this->fondimgId;
+    }
+
+    /**
+     * Set fondimgColor
+     *
+     * @param string $fondimgColor
+     * @return AbsFondimage
+     */
+    public function setFondimgColor($fondimgColor)
+    {
+        $this->fondimgColor = $fondimgColor;
+
+        return $this;
+    }
+
+    /**
+     * Get fondimgColor
+     *
+     * @return string 
+     */
+    public function getFondimgColor()
+    {
+        return $this->fondimgColor;
+    }
+
+    /**
+     * Set fondimgImage
+     *
+     * @param string $fondimgImage
+     * @return AbsFondimage
+     */
+    public function setFondimgImage($fondimgImage)
+    {
+        $this->fondimgImage = $fondimgImage;
+
+        return $this;
+    }
+
+    /**
+     * Get fondimgImage
+     *
+     * @return string 
+     */
+    public function getFondimgImage()
+    {
+        return $this->fondimgImage;
+    }
+
+    /**
+     * Set fondimgRepeat
+     *
+     * @param string $fondimgRepeat
+     * @return AbsFondimage
+     */
+    public function setFondimgRepeat($fondimgRepeat)
+    {
+        $this->fondimgRepeat = $fondimgRepeat;
+
+        return $this;
+    }
+
+    /**
+     * Get fondimgRepeat
+     *
+     * @return string 
+     */
+    public function getFondimgRepeat()
+    {
+        return $this->fondimgRepeat;
+    }
+
+    /**
+     * Set fondimgAttachment
+     *
+     * @param string $fondimgAttachment
+     * @return AbsFondimage
+     */
+    public function setFondimgAttachment($fondimgAttachment)
+    {
+        $this->fondimgAttachment = $fondimgAttachment;
+
+        return $this;
+    }
+
+    /**
+     * Get fondimgAttachment
+     *
+     * @return string 
+     */
+    public function getFondimgAttachment()
+    {
+        return $this->fondimgAttachment;
+    }
+
+    /**
+     * Set fondimgPosition
+     *
+     * @param string $fondimgPosition
+     * @return AbsFondimage
+     */
+    public function setFondimgPosition($fondimgPosition)
+    {
+        $this->fondimgPosition = $fondimgPosition;
+
+        return $this;
+    }
+
+    /**
+     * Get fondimgPosition
+     *
+     * @return string 
+     */
+    public function getFondimgPosition()
+    {
+        return $this->fondimgPosition;
+    }
+
+    /**
+     * Set fondimgOpacity
+     *
+     * @param string $fondimgOpacity
+     * @return AbsFondimage
+     */
+    public function setFondimgOpacity($fondimgOpacity)
+    {
+        $this->fondimgOpacity = $fondimgOpacity;
+
+        return $this;
+    }
+
+    /**
+     * Get fondimgOpacity
+     *
+     * @return string 
+     */
+    public function getFondimgOpacity()
+    {
+        return $this->fondimgOpacity;
+    }
+
+    /**
+     * Set fondimgEtat
+     *
+     * @param integer $fondimgEtat
+     * @return AbsFondimage
+     */
+    public function setFondimgEtat($fondimgEtat)
+    {
+        $this->fondimgEtat = $fondimgEtat;
+
+        return $this;
+    }
+
+    /**
+     * Get fondimgEtat
+     *
+     * @return integer 
+     */
+    public function getFondimgEtat()
+    {
+        return $this->fondimgEtat;
+    }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Devis\DecennaleBundle\Entity;
+namespace Abi\RoutineBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -36,4 +36,60 @@ class AbsPagePrix
     private $prixPrix;
 
 
+
+    /**
+     * Get prixId
+     *
+     * @return integer 
+     */
+    public function getPrixId()
+    {
+        return $this->prixId;
+    }
+
+    /**
+     * Set prixRefarticle
+     *
+     * @param integer $prixRefarticle
+     * @return AbsPagePrix
+     */
+    public function setPrixRefarticle($prixRefarticle)
+    {
+        $this->prixRefarticle = $prixRefarticle;
+
+        return $this;
+    }
+
+    /**
+     * Get prixRefarticle
+     *
+     * @return integer 
+     */
+    public function getPrixRefarticle()
+    {
+        return $this->prixRefarticle;
+    }
+
+    /**
+     * Set prixPrix
+     *
+     * @param float $prixPrix
+     * @return AbsPagePrix
+     */
+    public function setPrixPrix($prixPrix)
+    {
+        $this->prixPrix = $prixPrix;
+
+        return $this;
+    }
+
+    /**
+     * Get prixPrix
+     *
+     * @return float 
+     */
+    public function getPrixPrix()
+    {
+        return $this->prixPrix;
+    }
 }

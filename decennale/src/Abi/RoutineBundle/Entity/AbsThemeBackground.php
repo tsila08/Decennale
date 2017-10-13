@@ -1,6 +1,6 @@
 <?php
 
-namespace Devis\DecennaleBundle\Entity;
+namespace Abi\RoutineBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -36,4 +36,60 @@ class AbsThemeBackground
     private $backgroundEtat;
 
 
+
+    /**
+     * Get backgroundId
+     *
+     * @return integer 
+     */
+    public function getBackgroundId()
+    {
+        return $this->backgroundId;
+    }
+
+    /**
+     * Set backgroundImg
+     *
+     * @param string $backgroundImg
+     * @return AbsThemeBackground
+     */
+    public function setBackgroundImg($backgroundImg)
+    {
+        $this->backgroundImg = $backgroundImg;
+
+        return $this;
+    }
+
+    /**
+     * Get backgroundImg
+     *
+     * @return string 
+     */
+    public function getBackgroundImg()
+    {
+        return $this->backgroundImg;
+    }
+
+    /**
+     * Set backgroundEtat
+     *
+     * @param integer $backgroundEtat
+     * @return AbsThemeBackground
+     */
+    public function setBackgroundEtat($backgroundEtat)
+    {
+        $this->backgroundEtat = $backgroundEtat;
+
+        return $this;
+    }
+
+    /**
+     * Get backgroundEtat
+     *
+     * @return integer 
+     */
+    public function getBackgroundEtat()
+    {
+        return $this->backgroundEtat;
+    }
 }

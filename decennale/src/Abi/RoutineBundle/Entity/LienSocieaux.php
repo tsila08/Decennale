@@ -1,6 +1,6 @@
 <?php
 
-namespace Devis\DecennaleBundle\Entity;
+namespace Abi\RoutineBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -50,4 +50,106 @@ class LienSocieaux
     private $lienEtat;
 
 
+
+    /**
+     * Get lienId
+     *
+     * @return integer 
+     */
+    public function getLienId()
+    {
+        return $this->lienId;
+    }
+
+    /**
+     * Set lienTitre
+     *
+     * @param string $lienTitre
+     * @return LienSocieaux
+     */
+    public function setLienTitre($lienTitre)
+    {
+        $this->lienTitre = $lienTitre;
+
+        return $this;
+    }
+
+    /**
+     * Get lienTitre
+     *
+     * @return string 
+     */
+    public function getLienTitre()
+    {
+        return $this->lienTitre;
+    }
+
+    /**
+     * Set lienRef
+     *
+     * @param string $lienRef
+     * @return LienSocieaux
+     */
+    public function setLienRef($lienRef)
+    {
+        $this->lienRef = $lienRef;
+
+        return $this;
+    }
+
+    /**
+     * Get lienRef
+     *
+     * @return string 
+     */
+    public function getLienRef()
+    {
+        return $this->lienRef;
+    }
+
+    /**
+     * Set lienUrle
+     *
+     * @param string $lienUrle
+     * @return LienSocieaux
+     */
+    public function setLienUrle($lienUrle)
+    {
+        $this->lienUrle = $lienUrle;
+
+        return $this;
+    }
+
+    /**
+     * Get lienUrle
+     *
+     * @return string 
+     */
+    public function getLienUrle()
+    {
+        return $this->lienUrle;
+    }
+
+    /**
+     * Set lienEtat
+     *
+     * @param integer $lienEtat
+     * @return LienSocieaux
+     */
+    public function setLienEtat($lienEtat)
+    {
+        $this->lienEtat = $lienEtat;
+
+        return $this;
+    }
+
+    /**
+     * Get lienEtat
+     *
+     * @return integer 
+     */
+    public function getLienEtat()
+    {
+        return $this->lienEtat;
+    }
 }

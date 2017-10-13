@@ -21,20 +21,20 @@ class __TwigTemplate_4354a8ecbe40e4256545328ac2b05318ed66a2b09ffedbe953c98dde735
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_c39c233ae7fcee6d3e141c0e6faf7f146b3ef53a15b3bd4b3e511e98ebae5794 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_c39c233ae7fcee6d3e141c0e6faf7f146b3ef53a15b3bd4b3e511e98ebae5794->enter($__internal_c39c233ae7fcee6d3e141c0e6faf7f146b3ef53a15b3bd4b3e511e98ebae5794_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AbiRoutineBundle:Commentaires:index.html.twig"));
+        $__internal_56e632344c6854c00a10d65a3a30e3b50fb09ddc6b7db985095655dbcd6439a7 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_56e632344c6854c00a10d65a3a30e3b50fb09ddc6b7db985095655dbcd6439a7->enter($__internal_56e632344c6854c00a10d65a3a30e3b50fb09ddc6b7db985095655dbcd6439a7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AbiRoutineBundle:Commentaires:index.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_c39c233ae7fcee6d3e141c0e6faf7f146b3ef53a15b3bd4b3e511e98ebae5794->leave($__internal_c39c233ae7fcee6d3e141c0e6faf7f146b3ef53a15b3bd4b3e511e98ebae5794_prof);
+        $__internal_56e632344c6854c00a10d65a3a30e3b50fb09ddc6b7db985095655dbcd6439a7->leave($__internal_56e632344c6854c00a10d65a3a30e3b50fb09ddc6b7db985095655dbcd6439a7_prof);
 
     }
 
     // line 2
     public function block_body($context, array $blocks = array())
     {
-        $__internal_8bf1e979310fa260991be66b11ffcbfea246a39a96fda2490b6fc48610ef9da4 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_8bf1e979310fa260991be66b11ffcbfea246a39a96fda2490b6fc48610ef9da4->enter($__internal_8bf1e979310fa260991be66b11ffcbfea246a39a96fda2490b6fc48610ef9da4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "AbiRoutineBundle:Commentaires:index.html.twig"));
+        $__internal_931fc457791ee71aecb96969c06a6af58f3f590998fb927bc1e6ed804f0c0da3 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_931fc457791ee71aecb96969c06a6af58f3f590998fb927bc1e6ed804f0c0da3->enter($__internal_931fc457791ee71aecb96969c06a6af58f3f590998fb927bc1e6ed804f0c0da3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "AbiRoutineBundle:Commentaires:index.html.twig"));
 
         // line 3
         echo "
@@ -285,7 +285,7 @@ Votre commentaire a été pris en compte
                    
                   </div>
                   <div class=\"col-md-12\">
-                    <input value=\"Valider votre opinion\" type=\"submit\">
+                    <input value=\"Valider votre opinion\" type=\"submit\" class=\"btn btn-primary\">
                   </div>
                 </form>
                               </div>
@@ -311,7 +311,7 @@ Votre commentaire a été pris en compte
 
 ";
         
-        $__internal_8bf1e979310fa260991be66b11ffcbfea246a39a96fda2490b6fc48610ef9da4->leave($__internal_8bf1e979310fa260991be66b11ffcbfea246a39a96fda2490b6fc48610ef9da4_prof);
+        $__internal_931fc457791ee71aecb96969c06a6af58f3f590998fb927bc1e6ed804f0c0da3->leave($__internal_931fc457791ee71aecb96969c06a6af58f3f590998fb927bc1e6ed804f0c0da3_prof);
 
     }
 
@@ -481,7 +481,7 @@ Votre commentaire a été pris en compte
                    
                   </div>
                   <div class=\"col-md-12\">
-                    <input value=\"Valider votre opinion\" type=\"submit\">
+                    <input value=\"Valider votre opinion\" type=\"submit\" class=\"btn btn-primary\">
                   </div>
                 </form>
                               </div>

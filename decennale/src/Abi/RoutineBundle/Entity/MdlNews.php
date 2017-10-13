@@ -1,6 +1,6 @@
 <?php
 
-namespace Devis\DecennaleBundle\Entity;
+namespace Abi\RoutineBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -64,4 +64,152 @@ class MdlNews
     private $newsDate;
 
 
+
+    /**
+     * Get newsId
+     *
+     * @return integer 
+     */
+    public function getNewsId()
+    {
+        return $this->newsId;
+    }
+
+    /**
+     * Set newsTitre
+     *
+     * @param string $newsTitre
+     * @return MdlNews
+     */
+    public function setNewsTitre($newsTitre)
+    {
+        $this->newsTitre = $newsTitre;
+
+        return $this;
+    }
+
+    /**
+     * Get newsTitre
+     *
+     * @return string 
+     */
+    public function getNewsTitre()
+    {
+        return $this->newsTitre;
+    }
+
+    /**
+     * Set newsDescrition
+     *
+     * @param string $newsDescrition
+     * @return MdlNews
+     */
+    public function setNewsDescrition($newsDescrition)
+    {
+        $this->newsDescrition = $newsDescrition;
+
+        return $this;
+    }
+
+    /**
+     * Get newsDescrition
+     *
+     * @return string 
+     */
+    public function getNewsDescrition()
+    {
+        return $this->newsDescrition;
+    }
+
+    /**
+     * Set newsDetaille
+     *
+     * @param string $newsDetaille
+     * @return MdlNews
+     */
+    public function setNewsDetaille($newsDetaille)
+    {
+        $this->newsDetaille = $newsDetaille;
+
+        return $this;
+    }
+
+    /**
+     * Get newsDetaille
+     *
+     * @return string 
+     */
+    public function getNewsDetaille()
+    {
+        return $this->newsDetaille;
+    }
+
+    /**
+     * Set newsSlug
+     *
+     * @param string $newsSlug
+     * @return MdlNews
+     */
+    public function setNewsSlug($newsSlug)
+    {
+        $this->newsSlug = $newsSlug;
+
+        return $this;
+    }
+
+    /**
+     * Get newsSlug
+     *
+     * @return string 
+     */
+    public function getNewsSlug()
+    {
+        return $this->newsSlug;
+    }
+
+    /**
+     * Set newsEtat
+     *
+     * @param integer $newsEtat
+     * @return MdlNews
+     */
+    public function setNewsEtat($newsEtat)
+    {
+        $this->newsEtat = $newsEtat;
+
+        return $this;
+    }
+
+    /**
+     * Get newsEtat
+     *
+     * @return integer 
+     */
+    public function getNewsEtat()
+    {
+        return $this->newsEtat;
+    }
+
+    /**
+     * Set newsDate
+     *
+     * @param \DateTime $newsDate
+     * @return MdlNews
+     */
+    public function setNewsDate($newsDate)
+    {
+        $this->newsDate = $newsDate;
+
+        return $this;
+    }
+
+    /**
+     * Get newsDate
+     *
+     * @return \DateTime 
+     */
+    public function getNewsDate()
+    {
+        return $this->newsDate;
+    }
 }

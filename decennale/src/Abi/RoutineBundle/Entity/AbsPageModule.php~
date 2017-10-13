@@ -1,0 +1,67 @@
+<?php
+
+namespace Abi\RoutineBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * AbsPageModule
+ *
+ * @ORM\Table(name="abs_page_module")
+ * @ORM\Entity
+ */
+class AbsPageModule
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="module_id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $moduleId;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="module_ref", type="integer", nullable=false)
+     */
+    private $moduleRef;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="module_page", type="string", length=50, nullable=false)
+     */
+    private $modulePage;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="module_titre", type="string", length=50, nullable=false)
+     */
+    private $moduleTitre;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="module_url", type="string", length=100, nullable=false)
+     */
+    private $moduleUrl;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="module_ordre", type="integer", nullable=false)
+     */
+    private $moduleOrdre;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="module_etat", type="integer", nullable=false)
+     */
+    private $moduleEtat;
+
+
+}

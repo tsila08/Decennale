@@ -16,8 +16,8 @@ class __TwigTemplate_9fb7851493b79e7ced01182435f4f9fe1330a2affb6b2c347c6ae3c3300
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_98918e33d57f178a9fa59cf4ce8e95294de7b39758142df760cba70457f1b94f = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_98918e33d57f178a9fa59cf4ce8e95294de7b39758142df760cba70457f1b94f->enter($__internal_98918e33d57f178a9fa59cf4ce8e95294de7b39758142df760cba70457f1b94f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AdminDecennaleBundle::layout.html.twig"));
+        $__internal_aa685152f88cc11280fd51c157303267ea58654e83b8a7aa372272a4ae9db35e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_aa685152f88cc11280fd51c157303267ea58654e83b8a7aa372272a4ae9db35e->enter($__internal_aa685152f88cc11280fd51c157303267ea58654e83b8a7aa372272a4ae9db35e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AdminDecennaleBundle::layout.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -228,9 +228,12 @@ class __TwigTemplate_9fb7851493b79e7ced01182435f4f9fe1330a2affb6b2c347c6ae3c3300
 \t\t\t\t\t\t\t\t\t\t</li>
 
 \t\t\t\t\t\t\t\t\t\t<li>
-\t\t\t\t\t\t\t\t\t\t\t<a href=\"#\">
+\t\t\t\t\t\t\t\t\t\t\t<a href=\"";
+        // line 179
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("admin_decennale_devis", array("pageD" => 0, "pagef" => 10)), "html", null, true);
+        echo "\">
 \t\t\t\t\t\t\t\t\t\t\t\t<i class=\"btn btn-xs btn-primary fa fa-user\"></i>
-\t\t\t\t\t\t\t\t\t\t\t\tBob just signed up as an editor ...
+\t\t\t\t\t\t\t\t\t\t\t\tLes devis
 \t\t\t\t\t\t\t\t\t\t\t</a>
 \t\t\t\t\t\t\t\t\t\t</li>
 
@@ -594,6 +597,7 @@ class __TwigTemplate_9fb7851493b79e7ced01182435f4f9fe1330a2affb6b2c347c6ae3c3300
 
 \t\t\t\t\t\t\t\t<b class=\"arrow\"></b>
 \t\t\t\t\t\t\t</li>
+
 
 \t\t\t\t\t\t\t<li class=\"\">
 \t\t\t\t\t\t\t\t<a href=\"jquery-ui.html\">
@@ -1040,9 +1044,9 @@ class __TwigTemplate_9fb7851493b79e7ced01182435f4f9fe1330a2affb6b2c347c6ae3c3300
 \t\t\t\t\t\t\t<div class=\"col-xs-12\">
 \t\t\t\t\t
    ";
-        // line 990
+        // line 991
         $this->displayBlock('body', $context, $blocks);
-        // line 992
+        // line 993
         echo "\t\t\t\t</div>
 \t\t\t</div><!-- /.main-content -->
 
@@ -1091,7 +1095,7 @@ class __TwigTemplate_9fb7851493b79e7ced01182435f4f9fe1330a2affb6b2c347c6ae3c3300
 \t\t\tif('ontouchstart' in document.documentElement) document.write(\"<script src='assets/js/jquery.mobile.custom.min.js'>\"+\"<\"+\"/script>\");
 \t\t</script>
 \t\t<script src=\"";
-        // line 1039
+        // line 1040
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("assets/js/bootstrap.min.js"), "html", null, true);
         echo "\"></script>
 
@@ -1102,41 +1106,41 @@ class __TwigTemplate_9fb7851493b79e7ced01182435f4f9fe1330a2affb6b2c347c6ae3c3300
 \t\t<![endif]-->
 
 \t\t<script src=\"";
-        // line 1047
+        // line 1048
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("assets/js/jquery-ui.custom.min.js"), "html", null, true);
         echo "\"></script>
 \t\t<script src=\"";
-        // line 1048
+        // line 1049
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("assets/js/jquery.ui.touch-punch.min.js"), "html", null, true);
         echo "\"></script>
 \t\t<script src=\"";
-        // line 1049
+        // line 1050
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("assets/js/jquery.easypiechart.min.js"), "html", null, true);
         echo "\"></script>
 \t\t<script src=\"";
-        // line 1050
+        // line 1051
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("assets/js/jquery.sparkline.index.min.js"), "html", null, true);
         echo "\"></script>
 \t\t<script src=\"";
-        // line 1051
+        // line 1052
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("assets/js/jquery.flot.min.js"), "html", null, true);
         echo "\"></script>
 \t\t<script src=\"";
-        // line 1052
+        // line 1053
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("assets/js/jquery.flot.pie.min.js"), "html", null, true);
         echo "\"></script>
 \t\t<script src=\"";
-        // line 1053
+        // line 1054
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("assets/js/jquery.flot.resize.min.js"), "html", null, true);
         echo "\"></script>
 
 \t\t<!-- ace scripts -->
 \t\t<script src=\"";
-        // line 1056
+        // line 1057
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("assets/js/ace-elements.min.js"), "html", null, true);
         echo "\"</script>
 \t\t<script src=\"";
-        // line 1057
+        // line 1058
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("assets/js/ace.min.js"), "html", null, true);
         echo "\"></script>
 
@@ -1365,20 +1369,20 @@ class __TwigTemplate_9fb7851493b79e7ced01182435f4f9fe1330a2affb6b2c347c6ae3c3300
 </html>
 ";
         
-        $__internal_98918e33d57f178a9fa59cf4ce8e95294de7b39758142df760cba70457f1b94f->leave($__internal_98918e33d57f178a9fa59cf4ce8e95294de7b39758142df760cba70457f1b94f_prof);
+        $__internal_aa685152f88cc11280fd51c157303267ea58654e83b8a7aa372272a4ae9db35e->leave($__internal_aa685152f88cc11280fd51c157303267ea58654e83b8a7aa372272a4ae9db35e_prof);
 
     }
 
-    // line 990
+    // line 991
     public function block_body($context, array $blocks = array())
     {
-        $__internal_592e43593b4448becb1e4e8944da790811978b516b3e654907ad8e493f129089 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_592e43593b4448becb1e4e8944da790811978b516b3e654907ad8e493f129089->enter($__internal_592e43593b4448becb1e4e8944da790811978b516b3e654907ad8e493f129089_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "AdminDecennaleBundle::layout.html.twig"));
+        $__internal_5684c6fa109468d2860d3d00551314eee6fcc2f96e40e59b6a0cabfd2116cd6c = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_5684c6fa109468d2860d3d00551314eee6fcc2f96e40e59b6a0cabfd2116cd6c->enter($__internal_5684c6fa109468d2860d3d00551314eee6fcc2f96e40e59b6a0cabfd2116cd6c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "AdminDecennaleBundle::layout.html.twig"));
 
-        // line 991
+        // line 992
         echo "   ";
         
-        $__internal_592e43593b4448becb1e4e8944da790811978b516b3e654907ad8e493f129089->leave($__internal_592e43593b4448becb1e4e8944da790811978b516b3e654907ad8e493f129089_prof);
+        $__internal_5684c6fa109468d2860d3d00551314eee6fcc2f96e40e59b6a0cabfd2116cd6c->leave($__internal_5684c6fa109468d2860d3d00551314eee6fcc2f96e40e59b6a0cabfd2116cd6c_prof);
 
     }
 
@@ -1394,7 +1398,7 @@ class __TwigTemplate_9fb7851493b79e7ced01182435f4f9fe1330a2affb6b2c347c6ae3c3300
 
     public function getDebugInfo()
     {
-        return array (  1379 => 991,  1373 => 990,  1140 => 1057,  1136 => 1056,  1130 => 1053,  1126 => 1052,  1122 => 1051,  1118 => 1050,  1114 => 1049,  1110 => 1048,  1106 => 1047,  1095 => 1039,  1046 => 992,  1044 => 990,  218 => 167,  89 => 41,  77 => 32,  73 => 31,  65 => 26,  59 => 23,  51 => 18,  47 => 17,  42 => 15,  37 => 13,  23 => 1,);
+        return array (  1383 => 992,  1377 => 991,  1144 => 1058,  1140 => 1057,  1134 => 1054,  1130 => 1053,  1126 => 1052,  1122 => 1051,  1118 => 1050,  1114 => 1049,  1110 => 1048,  1099 => 1040,  1050 => 993,  1048 => 991,  233 => 179,  218 => 167,  89 => 41,  77 => 32,  73 => 31,  65 => 26,  59 => 23,  51 => 18,  47 => 17,  42 => 15,  37 => 13,  23 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -1585,9 +1589,9 @@ class __TwigTemplate_9fb7851493b79e7ced01182435f4f9fe1330a2affb6b2c347c6ae3c3300
 \t\t\t\t\t\t\t\t\t\t</li>
 
 \t\t\t\t\t\t\t\t\t\t<li>
-\t\t\t\t\t\t\t\t\t\t\t<a href=\"#\">
+\t\t\t\t\t\t\t\t\t\t\t<a href=\"{{ path('admin_decennale_devis', { 'pageD': 0,'pagef' : 10})}}\">
 \t\t\t\t\t\t\t\t\t\t\t\t<i class=\"btn btn-xs btn-primary fa fa-user\"></i>
-\t\t\t\t\t\t\t\t\t\t\t\tBob just signed up as an editor ...
+\t\t\t\t\t\t\t\t\t\t\t\tLes devis
 \t\t\t\t\t\t\t\t\t\t\t</a>
 \t\t\t\t\t\t\t\t\t\t</li>
 
@@ -1951,6 +1955,7 @@ class __TwigTemplate_9fb7851493b79e7ced01182435f4f9fe1330a2affb6b2c347c6ae3c3300
 
 \t\t\t\t\t\t\t\t<b class=\"arrow\"></b>
 \t\t\t\t\t\t\t</li>
+
 
 \t\t\t\t\t\t\t<li class=\"\">
 \t\t\t\t\t\t\t\t<a href=\"jquery-ui.html\">

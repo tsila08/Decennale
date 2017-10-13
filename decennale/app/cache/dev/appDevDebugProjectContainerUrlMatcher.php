@@ -125,6 +125,11 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                 return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_decennale_valide')), array (  '_controller' => 'Admin\\DecennaleBundle\\Controller\\CommentairesController::valideAction',));
             }
 
+            // admin_decennale_devis
+            if (0 === strpos($pathinfo, '/admin/Devis') && preg_match('#^/admin/Devis/(?P<pageD>[^/]++)/(?P<pagef>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_decennale_devis')), array (  '_controller' => 'Admin\\DecennaleBundle\\Controller\\DevisController::indexAction',));
+            }
+
         }
 
         if (0 === strpos($pathinfo, '/utilisateur')) {

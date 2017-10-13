@@ -32,11 +32,13 @@
     <parameter key="database_user">root</parameter>
     <parameter key="database_password">password</parameter>
     <parameter key="mailer_transport">smtp</parameter>
-    <parameter key="mailer_host">127.0.0.1</parameter>
-    <parameter key="mailer_user">null</parameter>
-    <parameter key="mailer_password">null</parameter>
-    <parameter key="secret">ThisTokenIsNotSoSecretChangeIt</parameter>
+    <parameter key="mailer_auth_mode">login</parameter>
+    <parameter key="mailer_host">ssl0.ovh.net</parameter>
+    <parameter key="mailer_port">587</parameter>
+    <parameter key="mailer_user">commercial@devis-decennale.fr</parameter>
+    <parameter key="mailer_password">Commercial93</parameter>
     <parameter key="locale">en</parameter>
+    <parameter key="secret">V5LyMQ3e9Ln9qgfHvyW3cdj988D946ED</parameter>
     <parameter key="controller_resolver.class">Symfony\Bundle\FrameworkBundle\Controller\ControllerResolver</parameter>
     <parameter key="controller_name_converter.class">Symfony\Bundle\FrameworkBundle\Controller\ControllerNameParser</parameter>
     <parameter key="response_listener.class">Symfony\Component\HttpKernel\EventListener\ResponseListener</parameter>
@@ -85,7 +87,7 @@
     <parameter key="translation.extractor.class">Symfony\Component\Translation\Extractor\ChainExtractor</parameter>
     <parameter key="translation.writer.class">Symfony\Component\Translation\Writer\TranslationWriter</parameter>
     <parameter key="property_accessor.class">Symfony\Component\PropertyAccess\PropertyAccessor</parameter>
-    <parameter key="kernel.secret">ThisTokenIsNotSoSecretChangeIt</parameter>
+    <parameter key="kernel.secret">V5LyMQ3e9Ln9qgfHvyW3cdj988D946ED</parameter>
     <parameter key="kernel.http_method_override">true</parameter>
     <parameter key="kernel.trusted_hosts" type="collection"/>
     <parameter key="kernel.trusted_proxies" type="collection"/>
@@ -307,6 +309,7 @@
     <parameter key="twig.exception_listener.controller">twig.controller.exception:showAction</parameter>
     <parameter key="twig.form.resources" type="collection">
       <parameter>form_div_layout.html.twig</parameter>
+      <parameter>bootstrap_3_layout.html.twig</parameter>
     </parameter>
     <parameter key="monolog.logger.class">Symfony\Bridge\Monolog\Logger</parameter>
     <parameter key="monolog.gelf.publisher.class">Gelf\MessagePublisher</parameter>
@@ -384,11 +387,11 @@
     <parameter key="swiftmailer.mailer.default.transport.name">smtp</parameter>
     <parameter key="swiftmailer.mailer.default.delivery.enabled">true</parameter>
     <parameter key="swiftmailer.mailer.default.transport.smtp.encryption">null</parameter>
-    <parameter key="swiftmailer.mailer.default.transport.smtp.port">25</parameter>
-    <parameter key="swiftmailer.mailer.default.transport.smtp.host">127.0.0.1</parameter>
-    <parameter key="swiftmailer.mailer.default.transport.smtp.username">null</parameter>
-    <parameter key="swiftmailer.mailer.default.transport.smtp.password">null</parameter>
-    <parameter key="swiftmailer.mailer.default.transport.smtp.auth_mode">null</parameter>
+    <parameter key="swiftmailer.mailer.default.transport.smtp.port">587</parameter>
+    <parameter key="swiftmailer.mailer.default.transport.smtp.host">ssl0.ovh.net</parameter>
+    <parameter key="swiftmailer.mailer.default.transport.smtp.username">commercial@devis-decennale.fr</parameter>
+    <parameter key="swiftmailer.mailer.default.transport.smtp.password">Commercial93</parameter>
+    <parameter key="swiftmailer.mailer.default.transport.smtp.auth_mode">login</parameter>
     <parameter key="swiftmailer.mailer.default.transport.smtp.timeout">30</parameter>
     <parameter key="swiftmailer.mailer.default.transport.smtp.source_ip">null</parameter>
     <parameter key="swiftmailer.spool.default.memory.path">/var/www/projet/decennale/app/cache/dev/swiftmailer/spool/default</parameter>
@@ -712,7 +715,7 @@
       <argument>/var/www/projet/decennale/app/Resources</argument>
     </service>
     <service id="uri_signer" class="Symfony\Component\HttpKernel\UriSigner">
-      <argument>ThisTokenIsNotSoSecretChangeIt</argument>
+      <argument>V5LyMQ3e9Ln9qgfHvyW3cdj988D946ED</argument>
     </service>
     <service id="config_cache_factory" class="Symfony\Component\Config\ResourceCheckerConfigCacheFactory">
       <argument type="collection">
@@ -1815,7 +1818,7 @@
         </argument>
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-            <argument>59da795edafd85.43518314</argument>
+            <argument>59dfb6e5642e19.79752374</argument>
           </service>
         </argument>
       </argument>
@@ -2196,7 +2199,7 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.token_storage"/>
-            <argument>59da795edafd85.43518314</argument>
+            <argument>59dfb6e5642e19.79752374</argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
             <argument type="service" id="security.authentication.manager"/>
           </service>
@@ -2232,6 +2235,7 @@
         <argument key="exception_controller">twig.controller.exception:showAction</argument>
         <argument key="form_themes" type="collection">
           <argument>form_div_layout.html.twig</argument>
+          <argument>bootstrap_3_layout.html.twig</argument>
         </argument>
         <argument key="autoescape">name</argument>
         <argument key="cache">/var/www/projet/decennale/app/cache/dev/twig</argument>
@@ -2372,6 +2376,7 @@
                   <service class="Symfony\Bridge\Twig\Form\TwigRendererEngine" public="false">
                     <argument type="collection">
                       <argument>form_div_layout.html.twig</argument>
+                      <argument>bootstrap_3_layout.html.twig</argument>
                     </argument>
                   </service>
                 </argument>
@@ -3126,23 +3131,23 @@
               </argument>
             </argument>
             <call method="setUsername">
-              <argument>null</argument>
+              <argument>commercial@devis-decennale.fr</argument>
             </call>
             <call method="setPassword">
-              <argument>null</argument>
+              <argument>Commercial93</argument>
             </call>
             <call method="setAuthMode">
-              <argument>null</argument>
+              <argument>login</argument>
             </call>
           </service>
         </argument>
       </argument>
       <argument type="service" id="swiftmailer.mailer.default.transport.eventdispatcher"/>
       <call method="setHost">
-        <argument>127.0.0.1</argument>
+        <argument>ssl0.ovh.net</argument>
       </call>
       <call method="setPort">
-        <argument>25</argument>
+        <argument>587</argument>
       </call>
       <call method="setEncryption">
         <argument>null</argument>

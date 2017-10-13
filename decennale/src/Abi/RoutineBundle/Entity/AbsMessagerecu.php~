@@ -1,0 +1,88 @@
+<?php
+
+namespace Abi\RoutineBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * AbsMessagerecu
+ *
+ * @ORM\Table(name="abs_messagerecu")
+ * @ORM\Entity
+ */
+class AbsMessagerecu
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="msg_id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $msgId;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="msg_civilite", type="string", length=20, nullable=false)
+     */
+    private $msgCivilite;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="msg_nom", type="string", length=200, nullable=false)
+     */
+    private $msgNom;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="msg_prenom", type="string", length=200, nullable=false)
+     */
+    private $msgPrenom;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="msg_email", type="string", length=200, nullable=false)
+     */
+    private $msgEmail;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="msg_tel", type="string", length=20, nullable=false)
+     */
+    private $msgTel;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="msg_objet", type="string", length=200, nullable=false)
+     */
+    private $msgObjet;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="msg_message", type="string", length=255, nullable=false)
+     */
+    private $msgMessage;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="msg_etat", type="integer", nullable=false)
+     */
+    private $msgEtat;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="msg_date", type="date", nullable=false)
+     */
+    private $msgDate;
+
+
+}

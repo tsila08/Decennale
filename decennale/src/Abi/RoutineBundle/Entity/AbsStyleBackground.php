@@ -1,6 +1,6 @@
 <?php
 
-namespace Devis\DecennaleBundle\Entity;
+namespace Abi\RoutineBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -29,4 +29,37 @@ class AbsStyleBackground
     private $badStyle;
 
 
+
+    /**
+     * Get badId
+     *
+     * @return integer 
+     */
+    public function getBadId()
+    {
+        return $this->badId;
+    }
+
+    /**
+     * Set badStyle
+     *
+     * @param string $badStyle
+     * @return AbsStyleBackground
+     */
+    public function setBadStyle($badStyle)
+    {
+        $this->badStyle = $badStyle;
+
+        return $this;
+    }
+
+    /**
+     * Get badStyle
+     *
+     * @return string 
+     */
+    public function getBadStyle()
+    {
+        return $this->badStyle;
+    }
 }

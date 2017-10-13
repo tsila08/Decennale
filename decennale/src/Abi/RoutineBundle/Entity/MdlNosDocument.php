@@ -1,6 +1,6 @@
 <?php
 
-namespace Devis\DecennaleBundle\Entity;
+namespace Abi\RoutineBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -64,4 +64,152 @@ class MdlNosDocument
     private $docEtat;
 
 
+
+    /**
+     * Get docId
+     *
+     * @return integer 
+     */
+    public function getDocId()
+    {
+        return $this->docId;
+    }
+
+    /**
+     * Set docTitre
+     *
+     * @param string $docTitre
+     * @return MdlNosDocument
+     */
+    public function setDocTitre($docTitre)
+    {
+        $this->docTitre = $docTitre;
+
+        return $this;
+    }
+
+    /**
+     * Get docTitre
+     *
+     * @return string 
+     */
+    public function getDocTitre()
+    {
+        return $this->docTitre;
+    }
+
+    /**
+     * Set docDescription
+     *
+     * @param string $docDescription
+     * @return MdlNosDocument
+     */
+    public function setDocDescription($docDescription)
+    {
+        $this->docDescription = $docDescription;
+
+        return $this;
+    }
+
+    /**
+     * Get docDescription
+     *
+     * @return string 
+     */
+    public function getDocDescription()
+    {
+        return $this->docDescription;
+    }
+
+    /**
+     * Set docPdf
+     *
+     * @param string $docPdf
+     * @return MdlNosDocument
+     */
+    public function setDocPdf($docPdf)
+    {
+        $this->docPdf = $docPdf;
+
+        return $this;
+    }
+
+    /**
+     * Get docPdf
+     *
+     * @return string 
+     */
+    public function getDocPdf()
+    {
+        return $this->docPdf;
+    }
+
+    /**
+     * Set docExtention
+     *
+     * @param string $docExtention
+     * @return MdlNosDocument
+     */
+    public function setDocExtention($docExtention)
+    {
+        $this->docExtention = $docExtention;
+
+        return $this;
+    }
+
+    /**
+     * Get docExtention
+     *
+     * @return string 
+     */
+    public function getDocExtention()
+    {
+        return $this->docExtention;
+    }
+
+    /**
+     * Set docDate
+     *
+     * @param \DateTime $docDate
+     * @return MdlNosDocument
+     */
+    public function setDocDate($docDate)
+    {
+        $this->docDate = $docDate;
+
+        return $this;
+    }
+
+    /**
+     * Get docDate
+     *
+     * @return \DateTime 
+     */
+    public function getDocDate()
+    {
+        return $this->docDate;
+    }
+
+    /**
+     * Set docEtat
+     *
+     * @param integer $docEtat
+     * @return MdlNosDocument
+     */
+    public function setDocEtat($docEtat)
+    {
+        $this->docEtat = $docEtat;
+
+        return $this;
+    }
+
+    /**
+     * Get docEtat
+     *
+     * @return integer 
+     */
+    public function getDocEtat()
+    {
+        return $this->docEtat;
+    }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Devis\DecennaleBundle\Entity;
+namespace Abi\RoutineBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -29,4 +29,37 @@ class AbsCopyright
     private $copyright;
 
 
+
+    /**
+     * Get copyrightId
+     *
+     * @return integer 
+     */
+    public function getCopyrightId()
+    {
+        return $this->copyrightId;
+    }
+
+    /**
+     * Set copyright
+     *
+     * @param string $copyright
+     * @return AbsCopyright
+     */
+    public function setCopyright($copyright)
+    {
+        $this->copyright = $copyright;
+
+        return $this;
+    }
+
+    /**
+     * Get copyright
+     *
+     * @return string 
+     */
+    public function getCopyright()
+    {
+        return $this->copyright;
+    }
 }

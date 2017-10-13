@@ -1,6 +1,6 @@
 <?php
 
-namespace Devis\DecennaleBundle\Entity;
+namespace Abi\RoutineBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -50,4 +50,106 @@ class AbsPageSidebar
     private $sidebarEtat;
 
 
+
+    /**
+     * Get sidebarId
+     *
+     * @return integer 
+     */
+    public function getSidebarId()
+    {
+        return $this->sidebarId;
+    }
+
+    /**
+     * Set sidebarRef
+     *
+     * @param integer $sidebarRef
+     * @return AbsPageSidebar
+     */
+    public function setSidebarRef($sidebarRef)
+    {
+        $this->sidebarRef = $sidebarRef;
+
+        return $this;
+    }
+
+    /**
+     * Get sidebarRef
+     *
+     * @return integer 
+     */
+    public function getSidebarRef()
+    {
+        return $this->sidebarRef;
+    }
+
+    /**
+     * Set sidebarTitre
+     *
+     * @param string $sidebarTitre
+     * @return AbsPageSidebar
+     */
+    public function setSidebarTitre($sidebarTitre)
+    {
+        $this->sidebarTitre = $sidebarTitre;
+
+        return $this;
+    }
+
+    /**
+     * Get sidebarTitre
+     *
+     * @return string 
+     */
+    public function getSidebarTitre()
+    {
+        return $this->sidebarTitre;
+    }
+
+    /**
+     * Set sidebarDescription
+     *
+     * @param string $sidebarDescription
+     * @return AbsPageSidebar
+     */
+    public function setSidebarDescription($sidebarDescription)
+    {
+        $this->sidebarDescription = $sidebarDescription;
+
+        return $this;
+    }
+
+    /**
+     * Get sidebarDescription
+     *
+     * @return string 
+     */
+    public function getSidebarDescription()
+    {
+        return $this->sidebarDescription;
+    }
+
+    /**
+     * Set sidebarEtat
+     *
+     * @param integer $sidebarEtat
+     * @return AbsPageSidebar
+     */
+    public function setSidebarEtat($sidebarEtat)
+    {
+        $this->sidebarEtat = $sidebarEtat;
+
+        return $this;
+    }
+
+    /**
+     * Get sidebarEtat
+     *
+     * @return integer 
+     */
+    public function getSidebarEtat()
+    {
+        return $this->sidebarEtat;
+    }
 }

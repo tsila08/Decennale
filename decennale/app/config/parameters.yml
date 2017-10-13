@@ -6,7 +6,10 @@ parameters:
     database_user: root
     database_password: password
     mailer_transport: smtp
-    mailer_host: 127.0.0.1
-    mailer_user: null
-    mailer_password: null
-    secret: ThisTokenIsNotSoSecretChangeIt
+    mailer_auth_mode: login
+    mailer_host: ssl0.ovh.net
+    mailer_port: 587
+    mailer_user: commercial@devis-decennale.fr
+    mailer_password: Commercial93
+    locale: fr
+    secret: V5LyMQ3e9Ln9qgfHvyW3cdj988D946ED

@@ -1,6 +1,6 @@
 <?php
 
-namespace Devis\DecennaleBundle\Entity;
+namespace Abi\RoutineBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -50,4 +50,106 @@ class ModuleFaq
     private $faqEtat;
 
 
+
+    /**
+     * Get faqId
+     *
+     * @return integer 
+     */
+    public function getFaqId()
+    {
+        return $this->faqId;
+    }
+
+    /**
+     * Set faqQuestion
+     *
+     * @param string $faqQuestion
+     * @return ModuleFaq
+     */
+    public function setFaqQuestion($faqQuestion)
+    {
+        $this->faqQuestion = $faqQuestion;
+
+        return $this;
+    }
+
+    /**
+     * Get faqQuestion
+     *
+     * @return string 
+     */
+    public function getFaqQuestion()
+    {
+        return $this->faqQuestion;
+    }
+
+    /**
+     * Set faqReponse
+     *
+     * @param string $faqReponse
+     * @return ModuleFaq
+     */
+    public function setFaqReponse($faqReponse)
+    {
+        $this->faqReponse = $faqReponse;
+
+        return $this;
+    }
+
+    /**
+     * Get faqReponse
+     *
+     * @return string 
+     */
+    public function getFaqReponse()
+    {
+        return $this->faqReponse;
+    }
+
+    /**
+     * Set faqDate
+     *
+     * @param \DateTime $faqDate
+     * @return ModuleFaq
+     */
+    public function setFaqDate($faqDate)
+    {
+        $this->faqDate = $faqDate;
+
+        return $this;
+    }
+
+    /**
+     * Get faqDate
+     *
+     * @return \DateTime 
+     */
+    public function getFaqDate()
+    {
+        return $this->faqDate;
+    }
+
+    /**
+     * Set faqEtat
+     *
+     * @param integer $faqEtat
+     * @return ModuleFaq
+     */
+    public function setFaqEtat($faqEtat)
+    {
+        $this->faqEtat = $faqEtat;
+
+        return $this;
+    }
+
+    /**
+     * Get faqEtat
+     *
+     * @return integer 
+     */
+    public function getFaqEtat()
+    {
+        return $this->faqEtat;
+    }
 }

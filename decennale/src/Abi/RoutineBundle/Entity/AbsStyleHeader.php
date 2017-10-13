@@ -1,6 +1,6 @@
 <?php
 
-namespace Devis\DecennaleBundle\Entity;
+namespace Abi\RoutineBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -29,4 +29,37 @@ class AbsStyleHeader
     private $hedStyle;
 
 
+
+    /**
+     * Get hedId
+     *
+     * @return integer 
+     */
+    public function getHedId()
+    {
+        return $this->hedId;
+    }
+
+    /**
+     * Set hedStyle
+     *
+     * @param string $hedStyle
+     * @return AbsStyleHeader
+     */
+    public function setHedStyle($hedStyle)
+    {
+        $this->hedStyle = $hedStyle;
+
+        return $this;
+    }
+
+    /**
+     * Get hedStyle
+     *
+     * @return string 
+     */
+    public function getHedStyle()
+    {
+        return $this->hedStyle;
+    }
 }

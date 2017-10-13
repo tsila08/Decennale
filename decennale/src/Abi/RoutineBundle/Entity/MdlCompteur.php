@@ -1,6 +1,6 @@
 <?php
 
-namespace Devis\DecennaleBundle\Entity;
+namespace Abi\RoutineBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -57,4 +57,129 @@ class MdlCompteur
     private $compEtat;
 
 
+
+    /**
+     * Get compId
+     *
+     * @return integer 
+     */
+    public function getCompId()
+    {
+        return $this->compId;
+    }
+
+    /**
+     * Set compTitre
+     *
+     * @param string $compTitre
+     * @return MdlCompteur
+     */
+    public function setCompTitre($compTitre)
+    {
+        $this->compTitre = $compTitre;
+
+        return $this;
+    }
+
+    /**
+     * Get compTitre
+     *
+     * @return string 
+     */
+    public function getCompTitre()
+    {
+        return $this->compTitre;
+    }
+
+    /**
+     * Set compIcon
+     *
+     * @param string $compIcon
+     * @return MdlCompteur
+     */
+    public function setCompIcon($compIcon)
+    {
+        $this->compIcon = $compIcon;
+
+        return $this;
+    }
+
+    /**
+     * Get compIcon
+     *
+     * @return string 
+     */
+    public function getCompIcon()
+    {
+        return $this->compIcon;
+    }
+
+    /**
+     * Set compCompteur
+     *
+     * @param integer $compCompteur
+     * @return MdlCompteur
+     */
+    public function setCompCompteur($compCompteur)
+    {
+        $this->compCompteur = $compCompteur;
+
+        return $this;
+    }
+
+    /**
+     * Get compCompteur
+     *
+     * @return integer 
+     */
+    public function getCompCompteur()
+    {
+        return $this->compCompteur;
+    }
+
+    /**
+     * Set compOrdre
+     *
+     * @param integer $compOrdre
+     * @return MdlCompteur
+     */
+    public function setCompOrdre($compOrdre)
+    {
+        $this->compOrdre = $compOrdre;
+
+        return $this;
+    }
+
+    /**
+     * Get compOrdre
+     *
+     * @return integer 
+     */
+    public function getCompOrdre()
+    {
+        return $this->compOrdre;
+    }
+
+    /**
+     * Set compEtat
+     *
+     * @param integer $compEtat
+     * @return MdlCompteur
+     */
+    public function setCompEtat($compEtat)
+    {
+        $this->compEtat = $compEtat;
+
+        return $this;
+    }
+
+    /**
+     * Get compEtat
+     *
+     * @return integer 
+     */
+    public function getCompEtat()
+    {
+        return $this->compEtat;
+    }
 }

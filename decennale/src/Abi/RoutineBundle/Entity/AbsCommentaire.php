@@ -135,4 +135,172 @@ class AbsCommentaire
     }
 
    
+
+    /**
+     * Get commentId
+     *
+     * @return integer 
+     */
+    public function getCommentId()
+    {
+        return $this->commentId;
+    }
+
+    /**
+     * Get commentRef
+     *
+     * @return string 
+     */
+    public function getCommentRef()
+    {
+        return $this->commentRef;
+    }
+
+    /**
+     * Set commentCivilite
+     *
+     * @param string $commentCivilite
+     * @return AbsCommentaire
+     */
+    public function setCommentCivilite($commentCivilite)
+    {
+        $this->commentCivilite = $commentCivilite;
+
+        return $this;
+    }
+
+    /**
+     * Get commentCivilite
+     *
+     * @return string 
+     */
+    public function getCommentCivilite()
+    {
+        return $this->commentCivilite;
+    }
+
+    /**
+     * Set commentPrenom
+     *
+     * @param string $commentPrenom
+     * @return AbsCommentaire
+     */
+    public function setCommentPrenom($commentPrenom)
+    {
+        $this->commentPrenom = $commentPrenom;
+
+        return $this;
+    }
+
+    /**
+     * Get commentPrenom
+     *
+     * @return string 
+     */
+    public function getCommentPrenom()
+    {
+        return $this->commentPrenom;
+    }
+
+    /**
+     * Set commentNom
+     *
+     * @param string $commentNom
+     * @return AbsCommentaire
+     */
+    public function setCommentNom($commentNom)
+    {
+        $this->commentNom = $commentNom;
+
+        return $this;
+    }
+
+    /**
+     * Get commentNom
+     *
+     * @return string 
+     */
+    public function getCommentNom()
+    {
+        return $this->commentNom;
+    }
+
+    /**
+     * Set commentEmail
+     *
+     * @param string $commentEmail
+     * @return AbsCommentaire
+     */
+    public function setCommentEmail($commentEmail)
+    {
+        $this->commentEmail = $commentEmail;
+
+        return $this;
+    }
+
+    /**
+     * Get commentEmail
+     *
+     * @return string 
+     */
+    public function getCommentEmail()
+    {
+        return $this->commentEmail;
+    }
+
+    /**
+     * Set commentText
+     *
+     * @param string $commentText
+     * @return AbsCommentaire
+     */
+    public function setCommentText($commentText)
+    {
+        $this->commentText = $commentText;
+
+        return $this;
+    }
+
+    /**
+     * Get commentText
+     *
+     * @return string 
+     */
+    public function getCommentText()
+    {
+        return $this->commentText;
+    }
+
+    /**
+     * Get commentEtat
+     *
+     * @return integer 
+     */
+    public function getCommentEtat()
+    {
+        return $this->commentEtat;
+    }
+
+    /**
+     * Set commentNote
+     *
+     * @param integer $commentNote
+     * @return AbsCommentaire
+     */
+    public function setCommentNote($commentNote)
+    {
+        $this->commentNote = $commentNote;
+
+        return $this;
+    }
+
+    /**
+     * Get commentNote
+     *
+     * @return integer 
+     */
+    public function getCommentNote()
+    {
+        return $this->commentNote;
+    }
 }

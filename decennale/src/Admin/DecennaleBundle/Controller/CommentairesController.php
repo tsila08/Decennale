@@ -18,10 +18,6 @@ class CommentairesController extends Controller
 
         $em = $this->getDoctrine()->getManager();
         $coms = $em->getRepository('AbiRoutineBundle:AbsCommentaire')->findBy(array('commentEtat'=>0),array('commentDate' => 'ASC'));
-                                                                             
-
-
-      
         
         
         return $this->render('AdminDecennaleBundle:Commentaires:index.html.twig',array(

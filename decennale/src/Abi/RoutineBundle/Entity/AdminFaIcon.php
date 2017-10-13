@@ -1,6 +1,6 @@
 <?php
 
-namespace Devis\DecennaleBundle\Entity;
+namespace Abi\RoutineBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -36,4 +36,60 @@ class AdminFaIcon
     private $faEtat;
 
 
+
+    /**
+     * Get faId
+     *
+     * @return integer 
+     */
+    public function getFaId()
+    {
+        return $this->faId;
+    }
+
+    /**
+     * Set faRef
+     *
+     * @param string $faRef
+     * @return AdminFaIcon
+     */
+    public function setFaRef($faRef)
+    {
+        $this->faRef = $faRef;
+
+        return $this;
+    }
+
+    /**
+     * Get faRef
+     *
+     * @return string 
+     */
+    public function getFaRef()
+    {
+        return $this->faRef;
+    }
+
+    /**
+     * Set faEtat
+     *
+     * @param integer $faEtat
+     * @return AdminFaIcon
+     */
+    public function setFaEtat($faEtat)
+    {
+        $this->faEtat = $faEtat;
+
+        return $this;
+    }
+
+    /**
+     * Get faEtat
+     *
+     * @return integer 
+     */
+    public function getFaEtat()
+    {
+        return $this->faEtat;
+    }
 }

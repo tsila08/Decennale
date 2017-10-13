@@ -32,22 +32,22 @@
               <div class="row">
                 <div class="col-md-5 col-sm-5">
 					<h4>Mes coordonnées</h4>
-					<p><strong>Nom Prenom :</strong>{{app.user.username}} {{app.user.userfirstname}}</p>
-					<p><strong>Prenom :</strong>{{app.user.userfirstname}}</p>
-					<p><strong>Email :</strong>{{app.user.mail}}</p>
-					<p><strong>Téléphone :</strong>{{app.user.telephone}}</p>
-					<p><strong>Adresse: :</strong>{{app.user.adresseEntreprise}}</p>
-					<p><strong>Ville: :</strong>{{app.user.ville}}</p>
+					<p><strong>Nom : </strong>{{app.user.username}}</p>
+					<p><strong>Prenom : </strong>{{app.user.userfirstname}}</p>
+					<p><strong>Email : </strong>{{app.user.mail}}</p>
+					<p><strong>Téléphone : </strong>{{app.user.clientTel}}</p>
+					<p><strong>Adresse : </strong>{{app.user.clientAdresse}}</p>
+					<p><strong>Ville : </strong>{{app.user.clientVille}}</p>
 					<button class="btn btn-primary">Modifier <i class="fa fa-edit"></i></button>
                 </div>
 				 <div class="col-md-7 col-sm-7">
 					<h4>Ma société</h4>
-					<p><strong>Raison sociale :</strong>{{app.user.raisonSociale}}</p>
-					<p><strong>Forme juridique :</strong>{{app.user.formeJuridique}}</p>
-					<p><strong>N° SIRET :</strong>{{app.user.numeroSiret}}</p>
-					<p><strong>Date de création :</strong>{{app.user.dateCreation |date('d-M-Y')}}</p>
-					<p><strong>Nombre de salariés :</strong>{{app.user.nombreDeSalarie}}</p>
-					<p><strong>Chiffre d'affaire :</strong>{{app.user.chiffreAffaire}}</p>
+					<p><strong>Raison sociale :</strong>{{societe.soRaisonSocial}}</p>
+					<p><strong>Forme juridique :</strong>{{societe.soFormjuridique}}</p>
+					<p><strong>N° SIRET :</strong>{{societe.soSiret}}</p>
+					<p><strong>Date de création :</strong>{{societe.soDateDeCreation |date('d-M-Y')}}</p>
+					<p><strong>Nombre de salariés :</strong>{{societe.soNbSalarier}}</p>
+					<p><strong>Chiffre d'affaire :</strong>{{societe.soChiffreAffaire}}</p>
 					<button class="btn btn-primary">Modifier <i class="fa fa-edit"></i></button>
                 </div>
 

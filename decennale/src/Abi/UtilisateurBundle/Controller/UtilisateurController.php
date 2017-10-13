@@ -7,8 +7,12 @@ use Symfony\Component\Security\Core\SecurityContext;
 use Abi\UtilisateurBundle\Entity\Utilisateur;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
 
+use Abi\UtilisateurBundle\Entity\AbsClient;
+use Abi\UtilisateurBundle\Entity\AbsConnexion;
+
 class UtilisateurController extends Controller
 {
+	
 	//Connexion
 	public function loginAction()
     {
@@ -205,7 +209,14 @@ class UtilisateurController extends Controller
     {
 		if($this->getUser())
 		{
-			return $this->render('AbiUtilisateurBundle:Utilisateur:monCompte.html.twig');	
+			$user = $this->getUser() ;
+
+			$clientSociete_repository = $this->getDoctrine()
+					->getManager()
+					->getRepository('AbiUtilisateurBundle:AbsClientSociete');
+
+			$societe = $user->getSocieteFromRequest($clientSociete_repository) ;
+			return $this->render('AbiUtilisateurBundle:Utilisateur:monCompte.html.twig', array('societe'=>$societe));	
 		}
 		return $this->redirect($this->generateUrl('abi_utilisateur_login'));
 	}

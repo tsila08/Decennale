@@ -1,6 +1,6 @@
 <?php
 
-namespace Devis\DecennaleBundle\Entity;
+namespace Abi\RoutineBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -43,4 +43,83 @@ class AbsAdmin
     private $info;
 
 
+
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set login
+     *
+     * @param string $login
+     * @return AbsAdmin
+     */
+    public function setLogin($login)
+    {
+        $this->login = $login;
+
+        return $this;
+    }
+
+    /**
+     * Get login
+     *
+     * @return string 
+     */
+    public function getLogin()
+    {
+        return $this->login;
+    }
+
+    /**
+     * Set password
+     *
+     * @param string $password
+     * @return AbsAdmin
+     */
+    public function setPassword($password)
+    {
+        $this->password = $password;
+
+        return $this;
+    }
+
+    /**
+     * Get password
+     *
+     * @return string 
+     */
+    public function getPassword()
+    {
+        return $this->password;
+    }
+
+    /**
+     * Set info
+     *
+     * @param string $info
+     * @return AbsAdmin
+     */
+    public function setInfo($info)
+    {
+        $this->info = $info;
+
+        return $this;
+    }
+
+    /**
+     * Get info
+     *
+     * @return string 
+     */
+    public function getInfo()
+    {
+        return $this->info;
+    }
 }

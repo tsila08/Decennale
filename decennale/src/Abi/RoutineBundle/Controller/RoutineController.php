@@ -8,6 +8,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Infojet\DevisBundle\Entity\DemandeDevisAutre ;
 use Infojet\DevisBundle\Entity\Risque ;
 use Infojet\DevisBundle\Entity\Echeance ;
+use Symfony\Component\Form\Extension\Core\Type\EmailType;
 
 class RoutineController extends Controller
 {
@@ -49,11 +50,13 @@ class RoutineController extends Controller
 					function(\Infojet\DevisBundle\Repository\EcheanceRepository $tc) {
 					return $tc->getEcheanceDisponibleForm() ;
 					}))	
-			->add('civilite', 'text', array('required'=>true, 
-					  'attr'=>array('placeholder'=>'Votre civilite Mme/Mlle/Mr...', 
-						'class'=>'form-control',
-						 'title'=>'Votre civilite', 
-					  )))
+                        
+                        ->add('civilite','choice',array(
+                                          'choices' => array(
+                                       'Mr' => 'Mr',
+                                       'Mme' => 'Mme',
+                    )))
+			
 			->add('username', 'text', array('required'=>true, 
 					  'attr'=>array('placeholder'=>'Votre nom...', 
 						'class'=>'form-control',
@@ -64,7 +67,7 @@ class RoutineController extends Controller
 						'class'=>'form-control',
 						 'title'=>'Votre nom', 
 					  )))
-			->add('mail', 'text', array('required'=>true, 
+			->add('mail', EmailType::class, array('required'=>true, 
 					  'attr'=>array('placeholder'=>'Votre adresse mail...', 
 						'class'=>'form-control',
 						 'title'=>'votre adresse mail', 

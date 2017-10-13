@@ -1,6 +1,6 @@
 <?php
 
-namespace Devis\DecennaleBundle\Entity;
+namespace Abi\RoutineBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -43,4 +43,83 @@ class AbsConnexionConfirm
     private $confirmChaine;
 
 
+
+    /**
+     * Get confirmId
+     *
+     * @return integer 
+     */
+    public function getConfirmId()
+    {
+        return $this->confirmId;
+    }
+
+    /**
+     * Set confirmPseudo
+     *
+     * @param string $confirmPseudo
+     * @return AbsConnexionConfirm
+     */
+    public function setConfirmPseudo($confirmPseudo)
+    {
+        $this->confirmPseudo = $confirmPseudo;
+
+        return $this;
+    }
+
+    /**
+     * Get confirmPseudo
+     *
+     * @return string 
+     */
+    public function getConfirmPseudo()
+    {
+        return $this->confirmPseudo;
+    }
+
+    /**
+     * Set confirmRef
+     *
+     * @param string $confirmRef
+     * @return AbsConnexionConfirm
+     */
+    public function setConfirmRef($confirmRef)
+    {
+        $this->confirmRef = $confirmRef;
+
+        return $this;
+    }
+
+    /**
+     * Get confirmRef
+     *
+     * @return string 
+     */
+    public function getConfirmRef()
+    {
+        return $this->confirmRef;
+    }
+
+    /**
+     * Set confirmChaine
+     *
+     * @param string $confirmChaine
+     * @return AbsConnexionConfirm
+     */
+    public function setConfirmChaine($confirmChaine)
+    {
+        $this->confirmChaine = $confirmChaine;
+
+        return $this;
+    }
+
+    /**
+     * Get confirmChaine
+     *
+     * @return string 
+     */
+    public function getConfirmChaine()
+    {
+        return $this->confirmChaine;
+    }
 }

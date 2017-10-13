@@ -1,6 +1,6 @@
 <?php
 
-namespace Devis\DecennaleBundle\Entity;
+namespace Abi\RoutineBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -36,4 +36,60 @@ class MdlNewsImg
     private $nigEtat;
 
 
+
+    /**
+     * Get nigId
+     *
+     * @return integer 
+     */
+    public function getNigId()
+    {
+        return $this->nigId;
+    }
+
+    /**
+     * Set nigImg
+     *
+     * @param string $nigImg
+     * @return MdlNewsImg
+     */
+    public function setNigImg($nigImg)
+    {
+        $this->nigImg = $nigImg;
+
+        return $this;
+    }
+
+    /**
+     * Get nigImg
+     *
+     * @return string 
+     */
+    public function getNigImg()
+    {
+        return $this->nigImg;
+    }
+
+    /**
+     * Set nigEtat
+     *
+     * @param integer $nigEtat
+     * @return MdlNewsImg
+     */
+    public function setNigEtat($nigEtat)
+    {
+        $this->nigEtat = $nigEtat;
+
+        return $this;
+    }
+
+    /**
+     * Get nigEtat
+     *
+     * @return integer 
+     */
+    public function getNigEtat()
+    {
+        return $this->nigEtat;
+    }
 }

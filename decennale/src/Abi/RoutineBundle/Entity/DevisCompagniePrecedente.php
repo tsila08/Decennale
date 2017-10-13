@@ -1,6 +1,6 @@
 <?php
 
-namespace Devis\DecennaleBundle\Entity;
+namespace Abi\RoutineBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -99,4 +99,267 @@ class DevisCompagniePrecedente
     private $cogprResilieSinistre;
 
 
+
+    /**
+     * Get cogprId
+     *
+     * @return integer 
+     */
+    public function getCogprId()
+    {
+        return $this->cogprId;
+    }
+
+    /**
+     * Set cogprRefdevs
+     *
+     * @param string $cogprRefdevs
+     * @return DevisCompagniePrecedente
+     */
+    public function setCogprRefdevs($cogprRefdevs)
+    {
+        $this->cogprRefdevs = $cogprRefdevs;
+
+        return $this;
+    }
+
+    /**
+     * Get cogprRefdevs
+     *
+     * @return string 
+     */
+    public function getCogprRefdevs()
+    {
+        return $this->cogprRefdevs;
+    }
+
+    /**
+     * Set cogprNomCompagnie
+     *
+     * @param string $cogprNomCompagnie
+     * @return DevisCompagniePrecedente
+     */
+    public function setCogprNomCompagnie($cogprNomCompagnie)
+    {
+        $this->cogprNomCompagnie = $cogprNomCompagnie;
+
+        return $this;
+    }
+
+    /**
+     * Get cogprNomCompagnie
+     *
+     * @return string 
+     */
+    public function getCogprNomCompagnie()
+    {
+        return $this->cogprNomCompagnie;
+    }
+
+    /**
+     * Set cogprTypeContrat
+     *
+     * @param string $cogprTypeContrat
+     * @return DevisCompagniePrecedente
+     */
+    public function setCogprTypeContrat($cogprTypeContrat)
+    {
+        $this->cogprTypeContrat = $cogprTypeContrat;
+
+        return $this;
+    }
+
+    /**
+     * Get cogprTypeContrat
+     *
+     * @return string 
+     */
+    public function getCogprTypeContrat()
+    {
+        return $this->cogprTypeContrat;
+    }
+
+    /**
+     * Set cogprNumeroContrat
+     *
+     * @param string $cogprNumeroContrat
+     * @return DevisCompagniePrecedente
+     */
+    public function setCogprNumeroContrat($cogprNumeroContrat)
+    {
+        $this->cogprNumeroContrat = $cogprNumeroContrat;
+
+        return $this;
+    }
+
+    /**
+     * Get cogprNumeroContrat
+     *
+     * @return string 
+     */
+    public function getCogprNumeroContrat()
+    {
+        return $this->cogprNumeroContrat;
+    }
+
+    /**
+     * Set cogprDateSouscription
+     *
+     * @param string $cogprDateSouscription
+     * @return DevisCompagniePrecedente
+     */
+    public function setCogprDateSouscription($cogprDateSouscription)
+    {
+        $this->cogprDateSouscription = $cogprDateSouscription;
+
+        return $this;
+    }
+
+    /**
+     * Get cogprDateSouscription
+     *
+     * @return string 
+     */
+    public function getCogprDateSouscription()
+    {
+        return $this->cogprDateSouscription;
+    }
+
+    /**
+     * Set cogprDateResiliation
+     *
+     * @param string $cogprDateResiliation
+     * @return DevisCompagniePrecedente
+     */
+    public function setCogprDateResiliation($cogprDateResiliation)
+    {
+        $this->cogprDateResiliation = $cogprDateResiliation;
+
+        return $this;
+    }
+
+    /**
+     * Get cogprDateResiliation
+     *
+     * @return string 
+     */
+    public function getCogprDateResiliation()
+    {
+        return $this->cogprDateResiliation;
+    }
+
+    /**
+     * Set cogprNbSinistres
+     *
+     * @param integer $cogprNbSinistres
+     * @return DevisCompagniePrecedente
+     */
+    public function setCogprNbSinistres($cogprNbSinistres)
+    {
+        $this->cogprNbSinistres = $cogprNbSinistres;
+
+        return $this;
+    }
+
+    /**
+     * Get cogprNbSinistres
+     *
+     * @return integer 
+     */
+    public function getCogprNbSinistres()
+    {
+        return $this->cogprNbSinistres;
+    }
+
+    /**
+     * Set cogprTotSinistres
+     *
+     * @param integer $cogprTotSinistres
+     * @return DevisCompagniePrecedente
+     */
+    public function setCogprTotSinistres($cogprTotSinistres)
+    {
+        $this->cogprTotSinistres = $cogprTotSinistres;
+
+        return $this;
+    }
+
+    /**
+     * Get cogprTotSinistres
+     *
+     * @return integer 
+     */
+    public function getCogprTotSinistres()
+    {
+        return $this->cogprTotSinistres;
+    }
+
+    /**
+     * Set cogprResilieNonPaiement
+     *
+     * @param integer $cogprResilieNonPaiement
+     * @return DevisCompagniePrecedente
+     */
+    public function setCogprResilieNonPaiement($cogprResilieNonPaiement)
+    {
+        $this->cogprResilieNonPaiement = $cogprResilieNonPaiement;
+
+        return $this;
+    }
+
+    /**
+     * Get cogprResilieNonPaiement
+     *
+     * @return integer 
+     */
+    public function getCogprResilieNonPaiement()
+    {
+        return $this->cogprResilieNonPaiement;
+    }
+
+    /**
+     * Set cogprResilieFausseDeclaration
+     *
+     * @param integer $cogprResilieFausseDeclaration
+     * @return DevisCompagniePrecedente
+     */
+    public function setCogprResilieFausseDeclaration($cogprResilieFausseDeclaration)
+    {
+        $this->cogprResilieFausseDeclaration = $cogprResilieFausseDeclaration;
+
+        return $this;
+    }
+
+    /**
+     * Get cogprResilieFausseDeclaration
+     *
+     * @return integer 
+     */
+    public function getCogprResilieFausseDeclaration()
+    {
+        return $this->cogprResilieFausseDeclaration;
+    }
+
+    /**
+     * Set cogprResilieSinistre
+     *
+     * @param integer $cogprResilieSinistre
+     * @return DevisCompagniePrecedente
+     */
+    public function setCogprResilieSinistre($cogprResilieSinistre)
+    {
+        $this->cogprResilieSinistre = $cogprResilieSinistre;
+
+        return $this;
+    }
+
+    /**
+     * Get cogprResilieSinistre
+     *
+     * @return integer 
+     */
+    public function getCogprResilieSinistre()
+    {
+        return $this->cogprResilieSinistre;
+    }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Devis\DecennaleBundle\Entity;
+namespace Abi\RoutineBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -57,4 +57,129 @@ class MdlNosSlogants
     private $slogEtat;
 
 
+
+    /**
+     * Get slogId
+     *
+     * @return integer 
+     */
+    public function getSlogId()
+    {
+        return $this->slogId;
+    }
+
+    /**
+     * Set slogTitre
+     *
+     * @param string $slogTitre
+     * @return MdlNosSlogants
+     */
+    public function setSlogTitre($slogTitre)
+    {
+        $this->slogTitre = $slogTitre;
+
+        return $this;
+    }
+
+    /**
+     * Get slogTitre
+     *
+     * @return string 
+     */
+    public function getSlogTitre()
+    {
+        return $this->slogTitre;
+    }
+
+    /**
+     * Set slogIcon
+     *
+     * @param string $slogIcon
+     * @return MdlNosSlogants
+     */
+    public function setSlogIcon($slogIcon)
+    {
+        $this->slogIcon = $slogIcon;
+
+        return $this;
+    }
+
+    /**
+     * Get slogIcon
+     *
+     * @return string 
+     */
+    public function getSlogIcon()
+    {
+        return $this->slogIcon;
+    }
+
+    /**
+     * Set slogTexte
+     *
+     * @param string $slogTexte
+     * @return MdlNosSlogants
+     */
+    public function setSlogTexte($slogTexte)
+    {
+        $this->slogTexte = $slogTexte;
+
+        return $this;
+    }
+
+    /**
+     * Get slogTexte
+     *
+     * @return string 
+     */
+    public function getSlogTexte()
+    {
+        return $this->slogTexte;
+    }
+
+    /**
+     * Set slogOrdre
+     *
+     * @param integer $slogOrdre
+     * @return MdlNosSlogants
+     */
+    public function setSlogOrdre($slogOrdre)
+    {
+        $this->slogOrdre = $slogOrdre;
+
+        return $this;
+    }
+
+    /**
+     * Get slogOrdre
+     *
+     * @return integer 
+     */
+    public function getSlogOrdre()
+    {
+        return $this->slogOrdre;
+    }
+
+    /**
+     * Set slogEtat
+     *
+     * @param integer $slogEtat
+     * @return MdlNosSlogants
+     */
+    public function setSlogEtat($slogEtat)
+    {
+        $this->slogEtat = $slogEtat;
+
+        return $this;
+    }
+
+    /**
+     * Get slogEtat
+     *
+     * @return integer 
+     */
+    public function getSlogEtat()
+    {
+        return $this->slogEtat;
+    }
 }

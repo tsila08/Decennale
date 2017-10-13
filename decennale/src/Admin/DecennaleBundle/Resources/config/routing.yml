@@ -7,3 +7,6 @@ admin_decennale_coms:
 admin_decennale_valide:
     path:     /ValideCommentaires/{id}/{valide}
     defaults: { _controller: AdminDecennaleBundle:Commentaires:valide}
+admin_decennale_devis:
+    path:     /Devis/{pageD}/{pagef}
+    defaults: { _controller: AdminDecennaleBundle:Devis:index }

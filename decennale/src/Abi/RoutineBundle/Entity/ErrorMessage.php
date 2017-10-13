@@ -1,6 +1,6 @@
 <?php
 
-namespace Devis\DecennaleBundle\Entity;
+namespace Abi\RoutineBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -36,4 +36,60 @@ class ErrorMessage
     private $mgText;
 
 
+
+    /**
+     * Get mgId
+     *
+     * @return integer 
+     */
+    public function getMgId()
+    {
+        return $this->mgId;
+    }
+
+    /**
+     * Set mgTitre
+     *
+     * @param string $mgTitre
+     * @return ErrorMessage
+     */
+    public function setMgTitre($mgTitre)
+    {
+        $this->mgTitre = $mgTitre;
+
+        return $this;
+    }
+
+    /**
+     * Get mgTitre
+     *
+     * @return string 
+     */
+    public function getMgTitre()
+    {
+        return $this->mgTitre;
+    }
+
+    /**
+     * Set mgText
+     *
+     * @param string $mgText
+     * @return ErrorMessage
+     */
+    public function setMgText($mgText)
+    {
+        $this->mgText = $mgText;
+
+        return $this;
+    }
+
+    /**
+     * Get mgText
+     *
+     * @return string 
+     */
+    public function getMgText()
+    {
+        return $this->mgText;
+    }
 }

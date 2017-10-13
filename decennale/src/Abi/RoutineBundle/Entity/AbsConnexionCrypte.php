@@ -1,6 +1,6 @@
 <?php
 
-namespace Devis\DecennaleBundle\Entity;
+namespace Abi\RoutineBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -71,4 +71,175 @@ class AbsConnexionCrypte
     private $conectDate;
 
 
+
+    /**
+     * Get conectId
+     *
+     * @return integer 
+     */
+    public function getConectId()
+    {
+        return $this->conectId;
+    }
+
+    /**
+     * Set conectRef
+     *
+     * @param string $conectRef
+     * @return AbsConnexionCrypte
+     */
+    public function setConectRef($conectRef)
+    {
+        $this->conectRef = $conectRef;
+
+        return $this;
+    }
+
+    /**
+     * Get conectRef
+     *
+     * @return string 
+     */
+    public function getConectRef()
+    {
+        return $this->conectRef;
+    }
+
+    /**
+     * Set conectPseudo
+     *
+     * @param string $conectPseudo
+     * @return AbsConnexionCrypte
+     */
+    public function setConectPseudo($conectPseudo)
+    {
+        $this->conectPseudo = $conectPseudo;
+
+        return $this;
+    }
+
+    /**
+     * Get conectPseudo
+     *
+     * @return string 
+     */
+    public function getConectPseudo()
+    {
+        return $this->conectPseudo;
+    }
+
+    /**
+     * Set conectEmail
+     *
+     * @param string $conectEmail
+     * @return AbsConnexionCrypte
+     */
+    public function setConectEmail($conectEmail)
+    {
+        $this->conectEmail = $conectEmail;
+
+        return $this;
+    }
+
+    /**
+     * Get conectEmail
+     *
+     * @return string 
+     */
+    public function getConectEmail()
+    {
+        return $this->conectEmail;
+    }
+
+    /**
+     * Set conectMdp
+     *
+     * @param string $conectMdp
+     * @return AbsConnexionCrypte
+     */
+    public function setConectMdp($conectMdp)
+    {
+        $this->conectMdp = $conectMdp;
+
+        return $this;
+    }
+
+    /**
+     * Get conectMdp
+     *
+     * @return string 
+     */
+    public function getConectMdp()
+    {
+        return $this->conectMdp;
+    }
+
+    /**
+     * Set conectIp
+     *
+     * @param string $conectIp
+     * @return AbsConnexionCrypte
+     */
+    public function setConectIp($conectIp)
+    {
+        $this->conectIp = $conectIp;
+
+        return $this;
+    }
+
+    /**
+     * Get conectIp
+     *
+     * @return string 
+     */
+    public function getConectIp()
+    {
+        return $this->conectIp;
+    }
+
+    /**
+     * Set conectEtat
+     *
+     * @param integer $conectEtat
+     * @return AbsConnexionCrypte
+     */
+    public function setConectEtat($conectEtat)
+    {
+        $this->conectEtat = $conectEtat;
+
+        return $this;
+    }
+
+    /**
+     * Get conectEtat
+     *
+     * @return integer 
+     */
+    public function getConectEtat()
+    {
+        return $this->conectEtat;
+    }
+
+    /**
+     * Set conectDate
+     *
+     * @param \DateTime $conectDate
+     * @return AbsConnexionCrypte
+     */
+    public function setConectDate($conectDate)
+    {
+        $this->conectDate = $conectDate;
+
+        return $this;
+    }
+
+    /**
+     * Get conectDate
+     *
+     * @return \DateTime 
+     */
+    public function getConectDate()
+    {
+        return $this->conectDate;
+    }
 }

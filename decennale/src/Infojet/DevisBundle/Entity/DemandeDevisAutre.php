@@ -746,10 +746,10 @@ class DemandeDevisAutre
     /**
      * Set Demandeur
      *
-     * @param \Abi\UtilisateurBundle\Utilisateur $demandeur
+     * @param \Abi\UtilisateurBundle\Entity\Utilisateur $demandeur
      * @return DemandeDevisAutre
      */
-    public function setDemandeur(\Abi\UtilisateurBundle\Utilisateur $demandeur = null)
+    public function setDemandeur(\Abi\UtilisateurBundle\Entity\Utilisateur $demandeur = null)
     {
         $this->Demandeur = $demandeur;
 
